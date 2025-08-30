@@ -1,0 +1,21 @@
+{% load rules %}
+{% load custom_filters %}
+{% load i18n %}
+
+<div class="sidebar-menu">
+    <ul class="menu">
+        {% has_perm 'meters.view_meter' request.user as logged_user_can_view_meters %}
+        {% if logged_user_can_view_meters %}
+            <li class="sidebar-title">{% trans "Service menu" %}</li>
+
+            {% url 'meter_list' as meter_list_url %}
+            <li class="sidebar-item {% if meter_list_url == request.path %}active{% endif %}">
+                <a href="{{ meter_list_url }}" class="sidebar-link">
+                    <i class="bi bi-speedometer2"></i>
+                    <span>{% trans "Meters" %}</span>
+                </a>
+            </li>
+
+        {% endif %}
+    </ul>
+</div>

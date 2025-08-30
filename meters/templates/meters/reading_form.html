@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'assets/css/additional-styles.css' %}"/>
+{% endblock extra_css %}
+
+{% block content %}
+    <section class="section">
+        <div class="card">
+            <div class="card-header">
+                {% if form.instance.pk %}
+                <h4 class="card-title">{% trans "Edit current month reading for" %} {{ meter.name }}</h4>
+                {% else %}
+                <h4 class="card-title">{% trans "Enter new reading for" %} {{ meter.name }}</h4>
+                {% endif %}
+            </div>
+            <div class="card-body">
+                <form method="POST" class="form">
+                    {% csrf_token %}
+                    <div style="color:red;">{{ form.non_field_errors }}</div>
+                    <div class="row">
+                        {% for field in form.visible_fields %}
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+                                    {{ field }}
+                                    <div class="" style="color:red;">{{ field.errors }}</div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <div class="col-md-3 col-12 d-flex align-items-end mt-2 mt-md-0">
+                            <div class="form-group w-100">
+                                <button class="btn btn-primary w-100 py-3 py-md-2" type="submit">
+                                    <i class="bi bi-save"></i> {% trans "Save" %}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

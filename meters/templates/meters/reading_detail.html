@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load l10n %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'assets/css/additional-styles.css' %}"/>
+{% endblock extra_css %}
+
+{% block content %}
+    <section class="section">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">
+                    {% trans "Readings for" %} {{ meter.name }}
+                </h4>
+            </div>
+            <div class="card-body">
+                <!-- Filter form -->
+                <form method="get" class="form">
+                    <div class="row mb-2">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="form-label"
+                                       for="{{ form.start.id_for_label }}">{{ form.start.label }}</label>
+                                {{ form.start }}
+                                <div class="" style="color:red;">{{ form.start.errors }}</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="form-label" for="{{ form.end.id_for_label }}">{{ form.end.label }}</label>
+                                {{ form.end }}
+                                <div class="" style="color:red;">{{ form.end.errors }}</div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-12 d-flex align-items-end mt-2 mt-md-0">
+                            <div class="form-group w-100">
+                                <button type="submit" class="btn btn-primary w-100 py-3 py-md-2">
+                                    <i class="bi bi-filter"></i> {% trans "Filter" %}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Monthly table -->
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>{% trans "Month" %}</th>
+                            <th>{% trans "Value" %}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for row in monthly_data %}
+                            <tr>
+                                <td>{{ row.month|date:"F Y" }}</td>
+                                <td>{{ row.value }}</td>
+                            </tr>
+                        {% endfor %}
+                        <tr class="fw-bold table-sum-row">
+                            <td>{% trans "Sum" %}</td>
+                            <td>{{ monthly_sum }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Monthly line chart card -->
+        <div class="card mt-3">
+            <div class="card-header">
+                <h4 class="card-title">{% trans "Monthly trend" %}</h4>
+            </div>
+            <div class="card-body">
+                {% if monthly_data %}
+                    <canvas id="monthlyLineChart" style="height: 320px; width: 100%;"></canvas>
+                {% else %}
+                    <p class="text-muted">{% trans "No data available to display the chart." %}</p>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+
+{% block extra_js %}
+    <script src="{% static 'assets/extensions/chart.js/chart.min.js' %}"></script>
+    <script>
+        (function() {
+            var ctxEl = document.getElementById('monthlyLineChart');
+            if (!ctxEl) return;
+
+            // Prepare labels and data from Django context
+            var labels = [
+                {% for row in monthly_data %}
+                    "{{ row.month|date:"F Y" }}"{% if not forloop.last %},{% endif %}
+                {% endfor %}
+            ];
+            var dataValues = [
+                {% for row in monthly_data %}
+                    {{ row.value|unlocalize|default:0 }}{% if not forloop.last %},{% endif %}
+                {% endfor %}
+            ];
+
+            var ctx = ctxEl.getContext('2d');
+            var chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: '{{ meter.type.unit|default:_("Value") }}',
+                        data: dataValues,
+                        borderColor: 'rgba(50, 69, 209, 1)',
+                        backgroundColor: 'rgba(50, 69, 209, 0.15)',
+                        borderWidth: 2,
+                        pointRadius: 3,
+                        fill: true,
+                        tension: 0.3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: true },
+                        tooltip: { intersect: false, mode: 'index' },
+                        title: { display: false }
+                    },
+                    scales: {
+                        x: {
+                            title: { display: true, text: '{% trans "Month" %}' }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: '{{ meter.type.unit|default:_("Value") }}' }
+                        }
+                    }
+                }
+            });
+        })();
+    </script>
+{% endblock extra_js %}

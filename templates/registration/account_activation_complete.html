@@ -1,0 +1,19 @@
+{% extends 'registration/base_auth.html' %}
+{% load static %}{% load i18n %}
+
+{% block title %}
+    <title>{% trans "New Account - Virusfree Mail Admin" %}</title>
+{% endblock title %}
+
+{% block content %}
+    <h1 class="auth-title">{{ title }}</h1>
+    <p class="auth-subtitle mb-5">
+        {% trans "Your account has been activated. Please login to continue." %}
+    </p>
+
+    <div class="text-center mt-5 text-lg fs-4">
+        <p class="text-gray-600">
+            <a href="{% url 'login' %}?next={% url 'two_factor:setup' %}" class="font-bold">{% trans "Log in" %}</a>
+        </p>
+    </div>
+{% endblock content %}

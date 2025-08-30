@@ -1,0 +1,7 @@
+{% load custom_filters %}
+
+{% if username|endswith:"_pwdreset" %}
+    <p>Account locked: too many password reset attempts. Please try again later after {{ cooloff_timedelta|timedelta_to_minutes|floatformat:0 }} minutes</p>
+{% else %}
+    <p>Account locked: too many login attempts. Please try again later after {{ cooloff_timedelta|timedelta_to_minutes|floatformat:0 }} minutes</p>
+{% endif %}

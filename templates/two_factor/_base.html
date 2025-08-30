@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    {% block title %}<title></title>{% endblock title %}
+
+    <link rel="stylesheet" href="{% static 'assets/css/main/app.css' %}"/>
+    <link rel="stylesheet" href="{% static 'assets/css/pages/auth.css' %}"/>
+    <link
+            rel="shortcut icon"
+            href="{% static 'assets/images/logo/favicon.png' %}"
+            type="image/png"
+    />
+    {% block extra_media %}{% endblock %}
+</head>
+
+<body>
+{% block content_wrapper %}
+    {% block content %}
+    {% endblock content %}
+{% endblock content_wrapper %}
+{% block scripts %}
+    <script src="{% static 'jquery-3.7.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/enforce_numeric.js' %}"></script>
+{% endblock scripts %}
+</body>
+</html>

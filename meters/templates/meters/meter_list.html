@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'assets/css/additional-styles.css' %}"/>
+{% endblock extra_css %}
+
+{% block content %}
+    <section class="section">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">{% trans "Meters overview" %}</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table id="meterListTable" class="table table-hover mb-0">
+                        <thead>
+                        <tr>
+                            <th>{% trans "Name" %}</th>
+                            <th>{% trans "Type" %}</th>
+                            <th>{% trans "Room" %}</th>
+                            <th>{% trans "Actions" %}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for meter in meters %}
+                            <tr onclick="window.location='{% url 'reading_detail' meter.slug %}'" style="cursor:pointer;">
+                                <td>{{ meter.name }}</td>
+                                <td>{{ meter.type.name }} ({{ meter.type.unit }})</td>
+                                <td>{{ meter.room.name }}</td>
+                                <td>
+                                    <a href="{% url 'reading_add' meter.slug %}" class="btn btn-sm btn-success">
+                                        <i class="bi bi-plus-circle"></i> {% trans "Add reading" %}
+                                    </a>
+                                </td>
+                            </tr>
+                        {% empty %}
+                            <tr>
+                                <td colspan="4">{% trans "No meters available." %}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                {% if is_paginated %}
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            {% if page_obj.has_previous %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?page={{ page_obj.previous_page_number }}">&laquo;</a>
+                                </li>
+                            {% endif %}
+                            {% for num in paginator.page_range %}
+                                <li class="page-item {% if page_obj.number == num %}active{% endif %}">
+                                    <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                                </li>
+                            {% endfor %}
+                            {% if page_obj.has_next %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?page={{ page_obj.next_page_number }}">&raquo;</a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </nav>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+
+{% block extra_js %}
+    <script>
+        const datatables_lang_url = "{% static 'assets/js/data_tables/cs.json' %}";
+    </script>
+    {% if meters %}
+        <script src="{% static 'assets/js/data_tables/meter_list_table.js' %}"></script>
+    {% endif %}
+{% endblock extra_js %}

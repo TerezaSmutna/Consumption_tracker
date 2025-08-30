@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block sidebar_menu %}
+    {% include 'index_sidebar_menu.html' %}
+{% endblock sidebar_menu %}
+
+{% block page_title %}
+{% endblock page_title %}
+
+{% block content %}
+    <section class="section">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Start with choosing your airplane</h4>
+            </div>
+            <div class="card-body">
+                <p></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Your account notifications</h4>
+            </div>
+            <div class="card-body">
+
+                <ul>
+                    {% if not has_2fa %}
+                        <li>
+                            Two-factor Authentication not activated
+                            (<a href="{% url 'two_factor:setup' %}">Activate</a>)
+                        </li>
+                    {% endif %}
+                </ul>
+
+            </div>
+        </div>
+    </section>
+{% endblock content %}

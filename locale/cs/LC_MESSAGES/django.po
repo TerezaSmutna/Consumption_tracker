@@ -1,0 +1,866 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Evidence Spotreby\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-18 12:32+0200\n"
+"PO-Revision-Date: 2025-09-01 18:09+0200\n"
+"Last-Translator: Evidence Spotreby Bot <noreply@example.com>\n"
+"Language-Team: Czech <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1)?0:((n>=2 && n<=4)?1:2);\n"
+
+#: .\evidence_spotreby\translations_stub.py:4
+msgid "January"
+msgstr "leden"
+
+#: .\evidence_spotreby\translations_stub.py:5
+msgid "February"
+msgstr "únor"
+
+#: .\evidence_spotreby\translations_stub.py:6
+msgid "March"
+msgstr "březen"
+
+#: .\evidence_spotreby\translations_stub.py:7
+msgid "April"
+msgstr "duben"
+
+#: .\evidence_spotreby\translations_stub.py:8
+msgid "May"
+msgstr "květen"
+
+#: .\evidence_spotreby\translations_stub.py:9
+msgid "June"
+msgstr "červen"
+
+#: .\evidence_spotreby\translations_stub.py:10
+msgid "July"
+msgstr "červenec"
+
+#: .\evidence_spotreby\translations_stub.py:11
+msgid "August"
+msgstr "srpen"
+
+#: .\evidence_spotreby\translations_stub.py:12
+msgid "September"
+msgstr "září"
+
+#: .\evidence_spotreby\translations_stub.py:13
+msgid "October"
+msgstr "říjen"
+
+#: .\evidence_spotreby\translations_stub.py:14
+msgid "November"
+msgstr "listopad"
+
+#: .\evidence_spotreby\translations_stub.py:15
+msgid "December"
+msgstr "prosinec"
+
+#: .\evidence_spotreby\translations_stub.py:17
+msgid "jan"
+msgstr "led"
+
+#: .\evidence_spotreby\translations_stub.py:18
+msgid "feb"
+msgstr "úno"
+
+#: .\evidence_spotreby\translations_stub.py:19
+msgid "mar"
+msgstr "bře"
+
+#: .\evidence_spotreby\translations_stub.py:20
+msgid "apr"
+msgstr "dub"
+
+#: .\evidence_spotreby\translations_stub.py:21
+msgid "may"
+msgstr "kvě"
+
+#: .\evidence_spotreby\translations_stub.py:22
+msgid "jun"
+msgstr "čer"
+
+#: .\evidence_spotreby\translations_stub.py:23
+msgid "jul"
+msgstr "čvc"
+
+#: .\evidence_spotreby\translations_stub.py:24
+msgid "aug"
+msgstr "srp"
+
+#: .\evidence_spotreby\translations_stub.py:25
+msgid "sep"
+msgstr "zář"
+
+#: .\evidence_spotreby\translations_stub.py:26
+msgid "oct"
+msgstr "říj"
+
+#: .\evidence_spotreby\translations_stub.py:27
+msgid "nov"
+msgstr "lis"
+
+#: .\evidence_spotreby\translations_stub.py:28
+msgid "dec"
+msgstr "pro"
+
+#: .\evidence_spotreby\translations_stub.py:30
+msgid "Monday"
+msgstr "pondělí"
+
+#: .\evidence_spotreby\translations_stub.py:31
+msgid "Tuesday"
+msgstr "úterý"
+
+#: .\evidence_spotreby\translations_stub.py:32
+msgid "Wednesday"
+msgstr "středa"
+
+#: .\evidence_spotreby\translations_stub.py:33
+msgid "Thursday"
+msgstr "čtvrtek"
+
+#: .\evidence_spotreby\translations_stub.py:34
+msgid "Friday"
+msgstr "pátek"
+
+#: .\evidence_spotreby\translations_stub.py:35
+msgid "Saturday"
+msgstr "sobota"
+
+#: .\evidence_spotreby\translations_stub.py:36
+msgid "Sunday"
+msgstr "neděle"
+
+#: .\evidence_spotreby\translations_stub.py:38
+msgid "mon"
+msgstr "po"
+
+#: .\evidence_spotreby\translations_stub.py:39
+msgid "tue"
+msgstr "út"
+
+#: .\evidence_spotreby\translations_stub.py:40
+msgid "wed"
+msgstr "st"
+
+#: .\evidence_spotreby\translations_stub.py:41
+msgid "thu"
+msgstr "čt"
+
+#: .\evidence_spotreby\translations_stub.py:42
+msgid "fri"
+msgstr "pá"
+
+#: .\evidence_spotreby\translations_stub.py:43
+msgid "sat"
+msgstr "so"
+
+#: .\evidence_spotreby\translations_stub.py:44
+msgid "sun"
+msgstr "ne"
+
+#: .\meters\forms.py:46
+msgid "A reading for this meter already exists for this month."
+msgstr "Odečet pro tento měřič pro tento měsíc již existuje."
+
+#: .\meters\forms.py:72
+msgid "Start month"
+msgstr "Počáteční měsíc"
+
+#: .\meters\forms.py:78
+msgid "End month"
+msgstr "Koncový měsíc"
+
+#: .\meters\forms.py:98
+msgid "Start month cannot be after end month."
+msgstr "Počáteční měsíc nemůže být po koncovém měsíci."
+
+#: .\meters\models.py:10 .\meters\models.py:21 .\meters\models.py:33
+#: .\meters\templates\meters\meter_list.html:20
+msgid "Name"
+msgstr "Název"
+
+#: .\meters\models.py:13 .\meters\models.py:35
+#: .\meters\templates\meters\meter_list.html:22
+msgid "Room"
+msgstr "Místnost"
+
+#: .\meters\models.py:14
+msgid "Rooms"
+msgstr "Místnosti"
+
+#: .\meters\models.py:22
+msgid "Unit"
+msgstr "Jednotka"
+
+#: .\meters\models.py:25
+msgid "Meter type"
+msgstr "Typ měřiče"
+
+#: .\meters\models.py:26
+msgid "Meter types"
+msgstr "Typy měřičů"
+
+#: .\meters\models.py:34 .\meters\templates\meters\meter_list.html:21
+msgid "Type"
+msgstr "Typ"
+
+#: .\meters\models.py:36
+msgid "Slug"
+msgstr "URL identifikátor"
+
+#: .\meters\models.py:40 .\meters\models.py:53
+#: .\meters\templates\meters\report.html:20
+msgid "Meter"
+msgstr "Měřič"
+
+#: .\meters\models.py:41 .\templates\sidebar_menu.html:82
+msgid "Meters"
+msgstr "Měřiče"
+
+#: .\meters\models.py:54
+msgid "Timestamp"
+msgstr "Časové razítko"
+
+#: .\meters\models.py:55 .\meters\templates\meters\reading_detail.html:53
+#: .\meters\templates\meters\reading_detail.html:114
+#: .\meters\templates\meters\reading_detail.html:138
+msgid "Value"
+msgstr "Hodnota"
+
+#: .\meters\models.py:59
+msgid "Reading"
+msgstr "Odečet"
+
+#: .\meters\models.py:60
+msgid "Readings"
+msgstr "Odečty"
+
+#: .\meters\templates\meters\meter_list.html:13
+msgid "Meters overview"
+msgstr "Přehled měřičů"
+
+#: .\meters\templates\meters\meter_list.html:23
+msgid "Actions"
+msgstr "Akce"
+
+#: .\meters\templates\meters\meter_list.html:34
+msgid "Add reading"
+msgstr "Přidat odečet"
+
+#: .\meters\templates\meters\meter_list.html:40
+msgid "No meters available."
+msgstr "Žádné měřiče nejsou k dispozici."
+
+#: .\meters\templates\meters\reading_detail.html:15
+msgid "Readings for"
+msgstr "Odečty pro"
+
+#: .\meters\templates\meters\reading_detail.html:40
+msgid "Filter"
+msgstr "Filtr"
+
+#: .\meters\templates\meters\reading_detail.html:52
+#: .\meters\templates\meters\reading_detail.html:134
+#: .\meters\templates\meters\report.html:21
+msgid "Month"
+msgstr "Měsíc"
+
+#: .\meters\templates\meters\reading_detail.html:64
+msgid "Sum"
+msgstr "Součet"
+
+#: .\meters\templates\meters\reading_detail.html:76
+msgid "Monthly trend"
+msgstr "Měsíční trend"
+
+#: .\meters\templates\meters\reading_detail.html:82
+msgid "No data available to display the chart."
+msgstr "Pro zobrazení grafu nejsou k dispozici žádná data."
+
+#: .\meters\templates\meters\reading_form.html:13
+msgid "Enter new reading for"
+msgstr "Zadejte nový odečet pro"
+
+#: .\meters\templates\meters\reading_form.html:32
+#: .\users\templates\users\profile.html:41
+msgid "Save"
+msgstr "Uložit"
+
+#: .\meters\templates\meters\report.html:13
+msgid "Monthly Report"
+msgstr "Měsíční přehled"
+
+#: .\meters\templates\meters\report.html:22
+msgid "Total"
+msgstr "Celkem"
+
+#: .\meters\templates\meters\report.html:34
+msgid "No data available."
+msgstr "Nejsou k dispozici žádná data."
+
+#: .\templates\base.html:9
+msgid "Evidence Spotreby"
+msgstr "Evidence Spotřeby"
+
+#: .\templates\base.html:131
+msgid "Start with choosing your airplane"
+msgstr "Začněte výběrem svého letadla"
+
+#: .\templates\base.html:134
+msgid "Domains list"
+msgstr "Seznam domén"
+
+#: .\templates\base.html:139
+msgid "Your account notifications"
+msgstr "Upozornění vašeho účtu"
+
+#: .\templates\header.html:31
+msgid "Very important person"
+msgstr "Velmi důležitá osoba"
+
+#: .\templates\header.html:50
+#, python-format
+msgid "Hello, %(user.username)s!"
+msgstr "Dobrý den, %(user.username)s!"
+
+#: .\templates\header.html:56
+msgid "My Profile"
+msgstr "Můj profil"
+
+#: .\templates\header.html:66
+msgid "Change Password"
+msgstr "Změnit heslo"
+
+#: .\templates\header.html:71
+msgid "2FA Settings"
+msgstr "Nastavení 2FA"
+
+#: .\templates\header.html:78
+msgid "Logout"
+msgstr "Odhlásit se"
+
+#: .\templates\registration\account_activation_complete.html:5
+#: .\templates\registration\create_account.html:5
+msgid "New Account - Virusfree Mail Admin"
+msgstr "Nový účet - Virusfree Mail Admin"
+
+#: .\templates\registration\account_activation_complete.html:11
+msgid "Your account has been activated. Please login to continue."
+msgstr "Váš účet byl aktivován. Přihlaste se prosím pro pokračování."
+
+#: .\templates\registration\account_activation_complete.html:16
+#: .\templates\registration\login.html:9 .\templates\registration\login.html:34
+#: .\templates\registration\password_reset.html:31
+#: .\templates\registration\password_reset_complete.html:17
+#: .\templates\registration\password_reset_sent.html:16
+#: .\templates\two_factor\core\login.html:14
+msgid "Log in"
+msgstr "Přihlásit se"
+
+#: .\templates\registration\create_account.html:13
+msgid "Account information:"
+msgstr "Informace o účtu:"
+
+#: .\templates\registration\create_account.html:45
+msgid "Personal information:"
+msgstr "Osobní údaje:"
+
+#: .\templates\registration\create_account.html:85
+msgid "Create new account"
+msgstr "Vytvořit nový účet"
+
+#: .\templates\registration\create_account.html:91
+#: .\templates\registration\password_reset_confirm.html:41
+msgid ""
+"Looks like you clicked on an invalid password reset link. Please request a "
+"new link."
+msgstr ""
+"Vypadá to, že jste klikli na neplatný odkaz pro reset hesla. Požádejte "
+"prosím o nový odkaz."
+
+#: .\templates\registration\login.html:5
+msgid "Login - Virusfree Mail Admin"
+msgstr "Přihlášení - Virusfree Mail Admin"
+
+#: .\templates\registration\login.html:11
+msgid "Type your credentials and enjoy your stay."
+msgstr "Zadejte své přihlašovací údaje a pokračujte."
+
+#: .\templates\registration\login.html:40
+#: .\templates\two_factor\core\login.html:67
+msgid "Forgot password?"
+msgstr "Zapomněli jste heslo?"
+
+#: .\templates\registration\password_change_done.html:5
+#: .\templates\registration\password_change_form.html:6
+#: .\users\templates\users\profile.html:6
+msgid "My domains"
+msgstr "Mé domény"
+
+#: .\templates\registration\password_change_form.html:67
+#: .\users\templates\users\profile.html:128
+msgid "Change password"
+msgstr "Změnit heslo"
+
+#: .\templates\registration\password_reset.html:5
+msgid "Forgot Password - Virusfree Mail Admin"
+msgstr "Zapomenuté heslo - Virusfree Mail Admin"
+
+#: .\templates\registration\password_reset.html:9
+msgid "Forgot Password?"
+msgstr "Zapomněli jste heslo?"
+
+#: .\templates\registration\password_reset.html:11
+msgid ""
+"Enter your e-mail. We will send you a link to initiate the password recovery."
+msgstr "Zadejte svůj e‑mail. Pošleme vám odkaz pro zahájení obnovy hesla."
+
+#: .\templates\registration\password_reset.html:25
+msgid "Send"
+msgstr "Odeslat"
+
+#: .\templates\registration\password_reset.html:30
+#: .\templates\registration\password_reset_sent.html:15
+msgid "Return to"
+msgstr "Zpět na"
+
+#: .\templates\registration\password_reset_complete.html:5
+msgid "Password Reset - Virusfree Mail Admin"
+msgstr "Obnovení hesla - Virusfree Mail Admin"
+
+#: .\templates\registration\password_reset_complete.html:10
+msgid "Password reset complete"
+msgstr "Obnovení hesla dokončeno"
+
+#: .\templates\registration\password_reset_complete.html:12
+msgid "Your password has been set. You may go ahead and log in now."
+msgstr "Vaše heslo bylo nastaveno. Nyní se můžete přihlásit."
+
+#: .\templates\registration\password_reset_confirm.html:2
+msgid "New Password - Virusfree Mail Admin"
+msgstr "Nové heslo - Virusfree Mail Admin"
+
+#: .\templates\registration\password_reset_confirm.html:8
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"Zadejte prosím nové heslo dvakrát, abychom ověřili, že jste jej zadali "
+"správně."
+
+#: .\templates\registration\password_reset_confirm.html:35
+msgid "Submit"
+msgstr "Odeslat"
+
+#: .\templates\registration\password_reset_email.html:2
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+"Tento e‑mail jste obdrželi, protože jste požádali o reset hesla pro svůj "
+"uživatelský účet na %(site_name)s."
+
+#: .\templates\registration\password_reset_email.html:4
+msgid ""
+"Please click on the link below or copy and paste it into the browser, and "
+"follow the instructions."
+msgstr ""
+"Klikněte prosím na odkaz níže nebo jej zkopírujte do prohlížeče a postupujte "
+"podle pokynů."
+
+#: .\templates\registration\password_reset_email.html:9
+msgid "Thanks for using our site!"
+msgstr "Děkujeme za používání našich stránek!"
+
+#: .\templates\registration\password_reset_email.html:11
+msgid "The Virusfree.cz team"
+msgstr "Tým Virusfree.cz"
+
+#: .\templates\registration\password_reset_sent.html:5
+msgid "Email Sent - Virusfree Mail Admin"
+msgstr "E-mail odeslán - Virusfree Mail Admin"
+
+#: .\templates\registration\password_reset_sent.html:9
+msgid "Email Sent"
+msgstr "E-mail odeslán"
+
+#: .\templates\registration\password_reset_sent.html:11
+msgid ""
+"If there is an account associated with the email you provided, you should "
+"receive an email containing instructions on how to set your password."
+msgstr ""
+"Pokud je s poskytnutým e‑mailem spojen účet, obdržíte e‑mail s pokyny, jak "
+"nastavit své heslo."
+
+#: .\templates\registration\password_reset_subject.txt:2
+#, python-format
+msgid "Password reset instructions for %(site_name)s"
+msgstr "Pokyny k resetu hesla pro %(site_name)s"
+
+#: .\templates\sidebar_menu.html:68
+msgid "Service menu"
+msgstr "Servisní menu"
+
+#: .\templates\two_factor\_wizard_actions.html:4
+#: .\templates\two_factor\_wizard_actions.html:23
+msgid "Next"
+msgstr "Další"
+
+#: .\templates\two_factor\_wizard_actions.html:10
+msgid "Back"
+msgstr "Zpět"
+
+#: .\templates\two_factor\_wizard_actions.html:18
+#: .\templates\two_factor\_wizard_actions.html:27
+#: .\users\templates\users\profile.html:45
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: .\templates\two_factor\core\backup_tokens.html:7
+#: .\templates\two_factor\profile\profile.html:34
+msgid "Backup Tokens"
+msgstr "Záložní kódy"
+
+#: .\templates\two_factor\core\backup_tokens.html:8
+msgid ""
+"Backup tokens can be used when your primary and backup phone numbers aren't "
+"available. The backup tokens below can be used for login verification. If "
+"you've used up all your backup tokens, you can generate a new set of backup "
+"tokens. Only the backup tokens shown below will be valid."
+msgstr "Záložní kódy lze použít, když nejsou dostupná vaše primární ani záložní telefonní čísla. Níže uvedené záložní kódy lze použít k ověření přihlášení. Pokud jste všechny záložní kódy vyčerpali, můžete vygenerovat novou sadu. Platné budou pouze kódy zobrazené níže."
+
+#: .\templates\two_factor\core\backup_tokens.html:20
+msgid "Print these tokens and keep them somewhere safe."
+msgstr "Tyto kódy si vytiskněte a uschovejte na bezpečném místě."
+
+#: .\templates\two_factor\core\backup_tokens.html:22
+msgid "You don't have any backup codes yet."
+msgstr "Zatím nemáte žádné záložní kódy."
+
+#: .\templates\two_factor\core\backup_tokens.html:27
+#: .\templates\two_factor\core\setup_complete.html:20
+#: .\templates\two_factor\core\setup_complete.html:28
+msgid "Back to Account Security"
+msgstr "Zpět na zabezpečení účtu"
+
+#: .\templates\two_factor\core\backup_tokens.html:28
+msgid "Generate Tokens"
+msgstr "Vygenerovat kódy"
+
+#: .\templates\two_factor\core\login.html:10
+msgid "Login - Evidence Spotreby Admin"
+msgstr "Přihlášení - Evidence Spotřeby Admin"
+
+#: .\templates\two_factor\core\login.html:16
+msgid "Don't share your credentials."
+msgstr "Nesdílejte své přihlašovací údaje."
+
+#: .\templates\two_factor\core\login.html:20
+msgid ""
+"Use this form for entering backup tokens for logging in. These tokens have "
+"been generated for you to print and keep safe. Please enter one of these "
+"backup tokens to login to your account."
+msgstr "Tento formulář použijte pro zadání záložních kódů k přihlášení. Tyto kódy byly vygenerovány k vytištění a bezpečnému uložení. Zadejte prosím jeden z těchto záložních kódů pro přihlášení do svého účtu."
+
+#: .\templates\two_factor\core\login.html:32
+msgid "Or, alternatively, use one of your other authentication methods:"
+msgstr "Případně použijte jednu z vašich dalších metod ověření:"
+
+#: .\templates\two_factor\core\login.html:52
+msgid "As a last resort, you can use a backup token:"
+msgstr "Jako poslední možnost můžete použít záložní kód:"
+
+#: .\templates\two_factor\core\login.html:55
+msgid "Use Backup Token"
+msgstr "Použít záložní kód"
+
+#: .\templates\two_factor\core\setup.html:4
+#: .\templates\two_factor\core\setup.html:11
+#: .\templates\two_factor\core\setup_complete.html:4
+#: .\templates\two_factor\core\setup_complete.html:7
+#: .\templates\two_factor\profile\profile.html:62
+msgid "Enable Two-Factor Authentication"
+msgstr "Zapnout dvoufázové ověřování"
+
+#: .\templates\two_factor\core\setup.html:13
+msgid ""
+"You are about to take your account security to the next level. Follow the "
+"steps in this wizard to enable two-factor authentication."
+msgstr "Chystáte se posunout zabezpečení svého účtu na vyšší úroveň. Postupujte podle kroků v tomto průvodci, abyste zapnuli dvoufázové ověřování."
+
+#: .\templates\two_factor\core\setup.html:17
+msgid "Please select which authentication method you would like to use."
+msgstr "Vyberte prosím metodu ověřování, kterou chcete používat."
+
+#: .\templates\two_factor\core\setup.html:20
+msgid ""
+"To start using a token generator, please use your smartphone to scan the QR "
+"code below. For example, use Google Authenticator."
+msgstr "Chcete-li začít používat generátor kódů, naskenujte pomocí svého telefonu níže uvedený QR kód. Například použijte Google Authenticator."
+
+#: .\templates\two_factor\core\setup.html:24
+msgid ""
+"Alternatively you can use the following secret to setup TOTP in your "
+"authenticator or password manager manually."
+msgstr "Případně můžete použít následující tajný klíč a nastavit TOTP ručně ve své autentizační aplikaci nebo správci hesel."
+
+#: .\templates\two_factor\core\setup.html:26
+msgid "TOTP Secret:"
+msgstr "TOTP tajný klíč:"
+
+#: .\templates\two_factor\core\setup.html:27
+msgid "Then, enter the token generated by the app."
+msgstr "Poté zadejte kód vygenerovaný aplikací."
+
+#: .\templates\two_factor\core\setup.html:30
+msgid ""
+"Please enter the phone number you wish to receive the text messages on. This "
+"number will be validated in the next step."
+msgstr ""
+
+#: .\templates\two_factor\core\setup.html:34
+msgid ""
+"Please enter the phone number you wish to be called on. This number will be "
+"validated in the next step."
+msgstr ""
+
+#: .\templates\two_factor\core\setup.html:39
+msgid "We are calling your phone right now, please enter the digits you hear."
+msgstr ""
+
+#: .\templates\two_factor\core\setup.html:42
+msgid "We sent you a text message, please enter the tokens we sent."
+msgstr ""
+
+#: .\templates\two_factor\core\setup.html:46
+msgid ""
+"We've encountered an issue with the selected authentication method. Please "
+"go back and verify that you entered your information correctly, try again, "
+"or use a different authentication method instead. If the issue persists, "
+"contact the site administrator."
+msgstr ""
+
+#: .\templates\two_factor\core\setup.html:53
+msgid ""
+"To identify and verify your YubiKey, please insert a token in the field "
+"below. Your YubiKey will be linked to your account."
+msgstr ""
+
+#: .\templates\two_factor\core\setup_complete.html:12
+msgid "Congratulations, you've successfully enabled two-factor authentication."
+msgstr ""
+
+#: .\templates\two_factor\core\setup_complete.html:17
+msgid "Begin Your Experience"
+msgstr ""
+
+#: .\templates\two_factor\core\setup_complete.html:23
+msgid ""
+"However, it might happen that you don't have access to your primary token "
+"device. To enable account recovery, add a phone number."
+msgstr ""
+
+#: .\templates\two_factor\core\setup_complete.html:30
+#: .\templates\two_factor\profile\profile.html:31
+#, fuzzy
+#| msgid "Phone number"
+msgid "Add Phone Number"
+msgstr "Telefonní číslo"
+
+#: .\templates\two_factor\profile\disable.html:8
+msgid "Disable Two-factor Authentication"
+msgstr ""
+
+#: .\templates\two_factor\profile\disable.html:9
+msgid ""
+"You are about to disable two-factor authentication. This weakens your "
+"account security, are you sure?"
+msgstr ""
+
+#: .\templates\two_factor\profile\disable.html:21
+msgid "Disable"
+msgstr ""
+
+#: .\templates\two_factor\profile\profile.html:8
+msgid "Account Security"
+msgstr ""
+
+#: .\templates\two_factor\profile\profile.html:11
+#, python-format
+msgid "Primary method: %(primary)s"
+msgstr ""
+
+#: .\templates\two_factor\profile\profile.html:14
+#, fuzzy
+#| msgid "Phone number"
+msgid "Backup Phone Numbers"
+msgstr "Telefonní číslo"
+
+#: .\templates\two_factor\profile\profile.html:15
+msgid ""
+"If your primary method is not available, we are able to send backup tokens "
+"to the phone numbers listed below."
+msgstr ""
+
+#: .\templates\two_factor\profile\profile.html:22
+msgid "Are you sure?"
+msgstr ""
+
+#: .\templates\two_factor\profile\profile.html:25
+msgid "Unregister"
+msgstr ""
+
+#: .\templates\two_factor\profile\profile.html:36
+msgid ""
+"If you don't have any device with you, you can access your account using "
+"backup tokens."
+msgstr ""
+
+#: .\templates\two_factor\profile\profile.html:38
+#, python-format
+msgid "You have only one backup token remaining."
+msgid_plural "You have %(counter)s backup tokens remaining."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: .\templates\two_factor\profile\profile.html:45
+msgid "Show Codes"
+msgstr ""
+
+#: .\templates\two_factor\profile\profile.html:47
+#: .\templates\two_factor\profile\profile.html:51
+msgid "Disable Two-Factor Authentication"
+msgstr ""
+
+#: .\templates\two_factor\profile\profile.html:48
+msgid ""
+"However we strongly discourage you to do so, you can also disable two-factor "
+"authentication for your account."
+msgstr ""
+
+#: .\templates\two_factor\profile\profile.html:54
+msgid "Exit Account Security"
+msgstr ""
+
+#: .\templates\two_factor\profile\profile.html:58
+msgid ""
+"Two-factor authentication is not enabled for your account. Enable two-factor "
+"authentication for enhanced account security."
+msgstr ""
+
+#: .\templates\two_factor\profile\profile.html:66
+msgid "I don't want to secure my account"
+msgstr ""
+
+#: .\users\forms.py:67
+msgid "Token"
+msgstr "Token"
+
+#: .\users\forms.py:176
+msgid "Email"
+msgstr "E-mail"
+
+#: .\users\forms.py:180
+msgid "E-mail"
+msgstr "E-mail"
+
+#: .\users\forms.py:183
+msgid "First Name"
+msgstr "Křestní jméno"
+
+#: .\users\forms.py:187
+msgid "First name"
+msgstr "Jméno"
+
+#: .\users\forms.py:190
+msgid "Last Name"
+msgstr "Příjmení"
+
+#: .\users\forms.py:194
+msgid "Last name"
+msgstr "Příjmení"
+
+#: .\users\forms.py:197 .\users\forms.py:201 .\users\models.py:17
+msgid "Organization"
+msgstr "Organizace"
+
+#: .\users\forms.py:204 .\users\forms.py:210 .\users\models.py:18
+msgid "Phone number"
+msgstr "Telefonní číslo"
+
+#: .\users\models.py:13
+msgid "Email address"
+msgstr "E-mailová adresa"
+
+#: .\users\models.py:15
+msgid "Parent"
+msgstr "Nadřazený"
+
+#: .\users\models.py:19
+msgid "Language"
+msgstr "Jazyk"
+
+#: .\users\models.py:21
+msgid "Date activated"
+msgstr "Datum aktivace"
+
+#: .\users\models.py:23
+msgid "Active token"
+msgstr "Aktivní token"
+
+#: .\users\templates\users\profile.html:31
+msgid "Contact details"
+msgstr "Kontaktní údaje"
+
+#: .\users\templates\users\profile.html:50
+msgid "Edit"
+msgstr "Upravit"
+
+#: .\users\templates\users\profile.html:120
+msgid "Account information"
+msgstr "Informace o účtu"
+
+#: .\users\templates\users\profile.html:138
+msgid "Username"
+msgstr "Uživatelské jméno"
+
+#: .\users\templates\users\profile.html:145
+msgid "Password"
+msgstr "Heslo"
+
+#: .\users\views.py:74
+msgid "User profile updated successfully"
+msgstr "Uživatelský profil byl úspěšně aktualizován"
+
+#: .\users\views.py:78
+msgid "Failed to update user profile."
+msgstr "Aktualizace uživatelského profilu se nezdařila."
+
+#: .\users\views.py:127
+msgid "Your session has timed out. Please login again."
+msgstr "Vaše relace vypršela. Přihlaste se prosím znovu."
+
+#: .\users\views.py:221
+msgid "Create account"
+msgstr "Vytvořit účet"
+
+#: .\users\views.py:226
+msgid "Activation complete"
+msgstr "Aktivace dokončena"
+
+#: .\users\views.py:235
+msgid "Your password was successfully updated!"
+msgstr "Vaše heslo bylo úspěšně aktualizováno!"

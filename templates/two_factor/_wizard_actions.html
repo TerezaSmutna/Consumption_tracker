@@ -1,0 +1,30 @@
+{% load i18n %}
+
+{% if wizard.steps.prev %}
+    <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-3">{% trans "Next" %}</button>
+
+    {% if wizard.steps.current == 'token' or wizard.steps.current == 'backup' %}
+        <div class="text-center mt-3 text-lg fs-4">
+            <button name="wizard_goto_step" type="submit"
+                    value="{{ wizard.steps.prev }}"
+                    class="float-right btn btn-link">{% trans "Back" %}
+            </button>
+        </div>
+    {% endif %}
+
+    {% if cancel_url and not wizard.steps.current == 'token' and not wizard.steps.current == 'backup' %}
+        <div class="text-center mt-3 text-lg fs-4">
+            <a href="{{ cancel_url }}"
+               class="float-right btn btn-link">{% trans "Cancel" %}</a>
+        </div>
+    {% endif %}
+
+{% else %}
+    <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-3">{% trans "Next" %}</button>
+    {% if cancel_url and not wizard.steps.current == 'auth' %}
+        <div class="text-center mt-3 text-lg fs-4">
+            <a href="{{ cancel_url }}"
+               class="float-right btn btn-link">{% trans "Cancel" %}</a>
+        </div>
+    {% endif %}
+{% endif %}

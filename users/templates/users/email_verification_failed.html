@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block sidebar_menu %}
+    {% if not domain %}
+        <ul class="menu">
+            <li class="sidebar-title">My domains</li>
+
+            {% for user_domain in user_domains %}
+                <li class="sidebar-item">
+                    <a href="{{ user_domain.get_absolute_url }}" class="sidebar-link">
+                        <i class="bi bi-caret-right"></i>
+                        <span>{{ user_domain }}</span>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        {{ block.super }}
+    {% endif %}
+{% endblock sidebar_menu %}
+
+{% block page_title %}
+    <h2>{{ status }}</h2>
+{% endblock page_title %}
+
+{% block content %}
+    <section class="section">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Due to an unexpected issue, the email was not sent.</h4>
+            </div>
+            <div class="card-body">
+                <p>{{ msg }}</p>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

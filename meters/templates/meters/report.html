@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'assets/css/additional-styles.css' %}"/>
+{% endblock extra_css %}
+
+{% block content %}
+<section class="section">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">{% trans "Monthly Report" %}</h4>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>{% trans "Meter" %}</th>
+                            <th>{% trans "Month" %}</th>
+                            <th>{% trans "Total" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in report %}
+                            <tr>
+                                <td>{{ row.meter__name }}</td>
+                                <td>{{ row.month|date:"F Y" }}</td>
+                                <td>{{ row.total }} {{ row.meter__type__unit }}</td>
+                            </tr>
+                        {% empty %}
+                            <tr>
+                                <td colspan="3">{% trans "No data available." %}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

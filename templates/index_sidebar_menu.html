@@ -1,0 +1,41 @@
+{% load custom_filters %}
+{% load rules %}
+
+
+<ul class="menu">
+    {% has_perm 'airplanes.edit_service' request.user as logged_user_can_edit_service %}
+
+    {% if user_airplanes and not user|has_group:'Service' %}
+        <li class="sidebar-title">My airplanes</li>
+
+        {% for airplane in user_airplanes %}
+            <li class="sidebar-item">
+                <a href="{{ airplane.get_absolute_url }}" class="sidebar-link">
+                    <i class="bi bi-caret-right"></i>
+                    <span>{{ airplane }}</span>
+                </a>
+            </li>
+        {% endfor %}
+    {% endif %}
+
+    <!-- Add airplane button -->
+    <li class="sidebar-item mt-2">
+        <a href="{% url 'airplanes:create' %}" class="btn btn-outline-primary btn-block" style="font-weight: bold;">
+            {#                <i class="bi bi-plus-circle-fill"></i>#}
+            <span>Add airplane</span>
+        </a>
+    </li>
+
+    {% if logged_user_can_edit_service %}
+        <li class="sidebar-title mt-5">Service menu</li>
+
+        {% url 'airplanes:list' as airplane_list_url %}
+        <li class="sidebar-item {% if airplane_list_url == request.path %}active{% endif %}">
+            <a href="{{ airplane_list_url }}" class="sidebar-link">
+                <i class="bi bi-airplane-fill"></i>
+                <span>Airplane list</span>
+            </a>
+        </li>
+    {% endif %}
+
+</ul>
