@@ -4,4 +4,4 @@ django-two-factor-auth~=1.16.0
 phonenumbers~=9.0.1
 django-axes~=8.0.0
 django-ipware~=7.0.0
-mysqlclient~=2.2.0
+#mysqlclient~=2.2.0

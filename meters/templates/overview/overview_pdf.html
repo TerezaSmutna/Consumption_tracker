@@ -1,0 +1,35 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meters Overview</title>
+    <style>
+        body { font-family: DejaVu Sans, sans-serif; font-size: 12px; }
+        table { border-collapse: collapse; width: auto; margin-bottom: 20px; }
+        th, td { border: 1px solid #333; padding: 6px 10px; }
+        th { background-color: #28a745; color: white; }
+    </style>
+</head>
+<body>
+    <h2>{% trans "Meters by type value" %}</h2>
+    {% for item in overview %}
+        <h4>{{ item.meter_type }} ({{ item.unit }})</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th style="text-align: left;">{% trans "Total" %}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{% trans "Total" %}</td>
+                    <td>{{ item.total }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% endfor %}
+</body>
+</html>

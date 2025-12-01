@@ -2,23 +2,34 @@
 import datetime
 
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
-from django.shortcuts import get_object_or_404, redirect
+from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse_lazy
 from django.utils import timezone
 from django.views.generic import DetailView, CreateView, TemplateView, ListView, UpdateView
 from django.db.models import Sum
 from django.db.models.functions import TruncMonth
 from django.utils.translation import gettext_lazy as _
+from django.http import HttpResponse
+from django.template.loader import get_template
+from xhtml2pdf import pisa
 
 from .forms import ReadingForm, MonthRangeForm
 from .models import Meter, Reading
 from .utils import get_current_month_range
+from .services import get_overview_data
 
 
 class MeterListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
     model = Meter
     template_name = "meters/meter_list.html"
     context_object_name = "meters"
+    paginate_by = 20
+    permission_required = "meters.view_meter"
+    
+class OverviewView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
+    model = Meter
+    template_name = "overview/overview.html"
+    context_object_name = "overview"
     paginate_by = 20
     permission_required = "meters.view_meter"
 
@@ -172,3 +183,32 @@ class ReportView(LoginRequiredMixin, PermissionRequiredMixin, TemplateView):
 
         context["report"] = qs
         return context
+
+
+class OverviewView(TemplateView):
+    template_name = "overview/overview.html"
+    title = _("Overview")
+
+    def get_context_data(self, **kwargs):
+        
+        context = super().get_context_data(**kwargs)
+        context["overview"] = get_overview_data()
+        return context
+    
+
+def overview_export_pdf(request):
+    overview = get_overview_data()
+
+    template_path = 'overview/overview_pdf.html'
+    context = {'overview': overview}
+
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="overview.pdf"'
+
+    template = get_template(template_path)
+    html = template.render(context)
+
+    pisa_status = pisa.CreatePDF(html, dest=response)
+    if pisa_status.err:
+        return HttpResponse('We had some errors <pre>' + html + '</pre>')
+    return response

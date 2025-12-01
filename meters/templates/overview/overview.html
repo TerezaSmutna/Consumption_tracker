@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'assets/css/additional-styles.css' %}"/>
+{% endblock extra_css %}
+
+{% block content %}
+<section class="section">
+
+    <section class="section d-flex align-items-center justify-content-between mb-3">
+        <h4>{% trans "Meters by type value" %}</h4>
+        <a href="{% url 'overview_export_pdf' %}" class="btn btn-sm btn-success text-white">
+            <i class="bi bi-file-earmark-pdf"></i> {% trans "Export to PDF" %}
+        </a>
+    </section>
+
+    {% for item in overview %}
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    {{ item.meter_type }} ({{ item.unit }})
+                </h5>
+            </div>
+
+            <div class="card-body p-3">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>{% trans "Value" %}</th>
+                                <th>{% trans "Total" %}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="cursor: default;">
+                                <td>{% trans "Sum" %}</td>
+                                <td>{{ item.total }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <p>{% trans "No overview data available." %}</p>
+    {% endfor %}
+
+</section>
+{% endblock content %}
+
+{% block extra_js %}
+<!-- Add custom JS here if needed -->
+{% endblock extra_js %}
+
+{% comment %} {% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'assets/css/additional-styles.css' %}"/>
+{% endblock extra_css %}
+
+{% block content %}
+<section class="section">
+
+    <section class="section d-flex align-items-center justify-content-between mb-3">
+        <h4>{% trans "Overview" %}</h4>
+        <a href="{% url 'overview_export_pdf' %}" class="btn btn-success text-white">
+            <i class="bi bi-file-earmark-pdf"></i> {% trans "Export to PDF" %}
+        </a>
+    </section>
+
+    {% for item in overview %}
+        <div class="mb-5"> <!-- spacing between cards -->
+            <div class="card shadow-sm d-inline-block"> <!-- card shrinks to content -->
+                <div class="card-header">
+                    <h5 class="card-title mb-0">
+                        {{ item.meter_type }} ({{ item.unit }})
+                    </h5>
+                </div>
+
+                <div class="card-body p-2">
+                    <div class="table-responsive d-inline-block">
+                        <table class="table table-hover mb-0 table-sm w-auto">
+                            <thead>
+                                <tr>
+                                    <th>{% trans "Label" %}</th>
+                                    <th>{% trans "Total" %}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="cursor: default;">
+                                    <td>{% trans "Sum" %}</td>
+                                    <td>{{ item.total }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <p>{% trans "No overview data available." %}</p>
+    {% endfor %}
+
+</section>
+{% endblock content %}
+
+{% block extra_js %}
+<!-- Add custom JS here if needed -->
+{% endblock extra_js %} {% endcomment %}

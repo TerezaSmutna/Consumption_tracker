@@ -15,6 +15,14 @@
                     <span>{% trans "Meters" %}</span>
                 </a>
             </li>
+            
+            {% url 'overview' as overview_url %}
+            <li class="sidebar-item {% if overview_url == request.path %}active{% endif %}">
+                <a href="{{ overview_url }}" class="sidebar-link">
+                    <i class="bi bi-speedometer2"></i>
+                    <span>{% trans "Overview" %}</span>
+                </a>
+            </li>
 
         {% endif %}
     </ul>

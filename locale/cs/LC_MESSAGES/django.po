@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Evidence Spotreby\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-18 12:32+0200\n"
+"POT-Creation-Date: 2025-11-29 17:09+0100\n"
 "PO-Revision-Date: 2025-09-01 18:09+0200\n"
 "Last-Translator: Evidence Spotreby Bot <noreply@example.com>\n"
 "Language-Team: Czech <LL@li.org>\n"
@@ -17,371 +17,424 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1)?0:((n>=2 && n<=4)?1:2);\n"
 
-#: .\evidence_spotreby\translations_stub.py:4
+#: evidence_spotreby/translations_stub.py:4
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:25
 msgid "January"
 msgstr "leden"
 
-#: .\evidence_spotreby\translations_stub.py:5
+#: evidence_spotreby/translations_stub.py:5
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:26
 msgid "February"
 msgstr "únor"
 
-#: .\evidence_spotreby\translations_stub.py:6
+#: evidence_spotreby/translations_stub.py:6
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:27
 msgid "March"
 msgstr "březen"
 
-#: .\evidence_spotreby\translations_stub.py:7
+#: evidence_spotreby/translations_stub.py:7
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:28
 msgid "April"
 msgstr "duben"
 
-#: .\evidence_spotreby\translations_stub.py:8
+#: evidence_spotreby/translations_stub.py:8
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:29
 msgid "May"
 msgstr "květen"
 
-#: .\evidence_spotreby\translations_stub.py:9
+#: evidence_spotreby/translations_stub.py:9
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:30
 msgid "June"
 msgstr "červen"
 
-#: .\evidence_spotreby\translations_stub.py:10
+#: evidence_spotreby/translations_stub.py:10
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:31
 msgid "July"
 msgstr "červenec"
 
-#: .\evidence_spotreby\translations_stub.py:11
+#: evidence_spotreby/translations_stub.py:11
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:32
 msgid "August"
 msgstr "srpen"
 
-#: .\evidence_spotreby\translations_stub.py:12
+#: evidence_spotreby/translations_stub.py:12
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:33
 msgid "September"
 msgstr "září"
 
-#: .\evidence_spotreby\translations_stub.py:13
+#: evidence_spotreby/translations_stub.py:13
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:34
 msgid "October"
 msgstr "říjen"
 
-#: .\evidence_spotreby\translations_stub.py:14
+#: evidence_spotreby/translations_stub.py:14
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:35
 msgid "November"
 msgstr "listopad"
 
-#: .\evidence_spotreby\translations_stub.py:15
+#: evidence_spotreby/translations_stub.py:15
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:36
 msgid "December"
 msgstr "prosinec"
 
-#: .\evidence_spotreby\translations_stub.py:17
+#: evidence_spotreby/translations_stub.py:17
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:39
 msgid "jan"
 msgstr "led"
 
-#: .\evidence_spotreby\translations_stub.py:18
+#: evidence_spotreby/translations_stub.py:18
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:40
 msgid "feb"
 msgstr "úno"
 
-#: .\evidence_spotreby\translations_stub.py:19
+#: evidence_spotreby/translations_stub.py:19
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:41
 msgid "mar"
 msgstr "bře"
 
-#: .\evidence_spotreby\translations_stub.py:20
+#: evidence_spotreby/translations_stub.py:20
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:42
 msgid "apr"
 msgstr "dub"
 
-#: .\evidence_spotreby\translations_stub.py:21
+#: evidence_spotreby/translations_stub.py:21
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:43
 msgid "may"
 msgstr "kvě"
 
-#: .\evidence_spotreby\translations_stub.py:22
+#: evidence_spotreby/translations_stub.py:22
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:44
 msgid "jun"
 msgstr "čer"
 
-#: .\evidence_spotreby\translations_stub.py:23
+#: evidence_spotreby/translations_stub.py:23
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:45
 msgid "jul"
 msgstr "čvc"
 
-#: .\evidence_spotreby\translations_stub.py:24
+#: evidence_spotreby/translations_stub.py:24
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:46
 msgid "aug"
 msgstr "srp"
 
-#: .\evidence_spotreby\translations_stub.py:25
+#: evidence_spotreby/translations_stub.py:25
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:47
 msgid "sep"
 msgstr "zář"
 
-#: .\evidence_spotreby\translations_stub.py:26
+#: evidence_spotreby/translations_stub.py:26
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:48
 msgid "oct"
 msgstr "říj"
 
-#: .\evidence_spotreby\translations_stub.py:27
+#: evidence_spotreby/translations_stub.py:27
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:49
 msgid "nov"
 msgstr "lis"
 
-#: .\evidence_spotreby\translations_stub.py:28
+#: evidence_spotreby/translations_stub.py:28
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:50
 msgid "dec"
 msgstr "pro"
 
-#: .\evidence_spotreby\translations_stub.py:30
+#: evidence_spotreby/translations_stub.py:30
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:7
 msgid "Monday"
 msgstr "pondělí"
 
-#: .\evidence_spotreby\translations_stub.py:31
+#: evidence_spotreby/translations_stub.py:31
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:8
 msgid "Tuesday"
 msgstr "úterý"
 
-#: .\evidence_spotreby\translations_stub.py:32
+#: evidence_spotreby/translations_stub.py:32
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:9
 msgid "Wednesday"
 msgstr "středa"
 
-#: .\evidence_spotreby\translations_stub.py:33
+#: evidence_spotreby/translations_stub.py:33
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:10
 msgid "Thursday"
 msgstr "čtvrtek"
 
-#: .\evidence_spotreby\translations_stub.py:34
+#: evidence_spotreby/translations_stub.py:34
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:11
 msgid "Friday"
 msgstr "pátek"
 
-#: .\evidence_spotreby\translations_stub.py:35
+#: evidence_spotreby/translations_stub.py:35
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:12
 msgid "Saturday"
 msgstr "sobota"
 
-#: .\evidence_spotreby\translations_stub.py:36
+#: evidence_spotreby/translations_stub.py:36
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:13
 msgid "Sunday"
 msgstr "neděle"
 
-#: .\evidence_spotreby\translations_stub.py:38
+#: evidence_spotreby/translations_stub.py:38
 msgid "mon"
 msgstr "po"
 
-#: .\evidence_spotreby\translations_stub.py:39
+#: evidence_spotreby/translations_stub.py:39
 msgid "tue"
 msgstr "út"
 
-#: .\evidence_spotreby\translations_stub.py:40
+#: evidence_spotreby/translations_stub.py:40
 msgid "wed"
 msgstr "st"
 
-#: .\evidence_spotreby\translations_stub.py:41
+#: evidence_spotreby/translations_stub.py:41
 msgid "thu"
 msgstr "čt"
 
-#: .\evidence_spotreby\translations_stub.py:42
+#: evidence_spotreby/translations_stub.py:42
 msgid "fri"
 msgstr "pá"
 
-#: .\evidence_spotreby\translations_stub.py:43
+#: evidence_spotreby/translations_stub.py:43
 msgid "sat"
 msgstr "so"
 
-#: .\evidence_spotreby\translations_stub.py:44
+#: evidence_spotreby/translations_stub.py:44
 msgid "sun"
 msgstr "ne"
 
-#: .\meters\forms.py:46
+#: meters/forms.py:45
 msgid "A reading for this meter already exists for this month."
 msgstr "Odečet pro tento měřič pro tento měsíc již existuje."
 
-#: .\meters\forms.py:72
+#: meters/forms.py:71
 msgid "Start month"
 msgstr "Počáteční měsíc"
 
-#: .\meters\forms.py:78
+#: meters/forms.py:77
 msgid "End month"
 msgstr "Koncový měsíc"
 
-#: .\meters\forms.py:98
+#: meters/forms.py:97
 msgid "Start month cannot be after end month."
 msgstr "Počáteční měsíc nemůže být po koncovém měsíci."
 
-#: .\meters\models.py:10 .\meters\models.py:21 .\meters\models.py:33
-#: .\meters\templates\meters\meter_list.html:20
+#: meters/models.py:10 meters/models.py:21 meters/models.py:33
+#: meters/templates/meters/meter_list.html:20
 msgid "Name"
 msgstr "Název"
 
-#: .\meters\models.py:13 .\meters\models.py:35
-#: .\meters\templates\meters\meter_list.html:22
+#: meters/models.py:13 meters/models.py:35
+#: meters/templates/meters/meter_list.html:22
 msgid "Room"
 msgstr "Místnost"
 
-#: .\meters\models.py:14
+#: meters/models.py:14
 msgid "Rooms"
 msgstr "Místnosti"
 
-#: .\meters\models.py:22
+#: meters/models.py:22
 msgid "Unit"
 msgstr "Jednotka"
 
-#: .\meters\models.py:25
+#: meters/models.py:25
 msgid "Meter type"
 msgstr "Typ měřiče"
 
-#: .\meters\models.py:26
+#: meters/models.py:26
 msgid "Meter types"
 msgstr "Typy měřičů"
 
-#: .\meters\models.py:34 .\meters\templates\meters\meter_list.html:21
+#: meters/models.py:34 meters/templates/meters/meter_list.html:21
 msgid "Type"
 msgstr "Typ"
 
-#: .\meters\models.py:36
+#: meters/models.py:36
 msgid "Slug"
 msgstr "URL identifikátor"
 
-#: .\meters\models.py:40 .\meters\models.py:53
-#: .\meters\templates\meters\report.html:20
+#: meters/models.py:40 meters/models.py:53
+#: meters/templates/meters/report.html:20
 msgid "Meter"
 msgstr "Měřič"
 
-#: .\meters\models.py:41 .\templates\sidebar_menu.html:82
+#: meters/models.py:41 templates/sidebar_menu.html:15
 msgid "Meters"
 msgstr "Měřiče"
 
-#: .\meters\models.py:54
+#: meters/models.py:54
 msgid "Timestamp"
 msgstr "Časové razítko"
 
-#: .\meters\models.py:55 .\meters\templates\meters\reading_detail.html:53
-#: .\meters\templates\meters\reading_detail.html:114
-#: .\meters\templates\meters\reading_detail.html:138
+#: meters/models.py:55 meters/templates/meters/reading_detail.html:53
+#: meters/templates/meters/reading_detail.html:114
+#: meters/templates/meters/reading_detail.html:138
 msgid "Value"
 msgstr "Hodnota"
 
-#: .\meters\models.py:59
+#: meters/models.py:59
 msgid "Reading"
 msgstr "Odečet"
 
-#: .\meters\models.py:60
+#: meters/models.py:60
 msgid "Readings"
 msgstr "Odečty"
 
-#: .\meters\templates\meters\meter_list.html:13
+#: meters/templates/meters/meter_list.html:13
 msgid "Meters overview"
 msgstr "Přehled měřičů"
 
-#: .\meters\templates\meters\meter_list.html:23
+#: meters/templates/meters/meter_list.html:23
 msgid "Actions"
 msgstr "Akce"
 
-#: .\meters\templates\meters\meter_list.html:34
+#: meters/templates/meters/meter_list.html:34
 msgid "Add reading"
 msgstr "Přidat odečet"
 
-#: .\meters\templates\meters\meter_list.html:40
+#: meters/templates/meters/meter_list.html:40
 msgid "No meters available."
 msgstr "Žádné měřiče nejsou k dispozici."
 
-#: .\meters\templates\meters\reading_detail.html:15
+#: meters/templates/meters/reading_detail.html:15
 msgid "Readings for"
 msgstr "Odečty pro"
 
-#: .\meters\templates\meters\reading_detail.html:40
+#: meters/templates/meters/reading_detail.html:40
 msgid "Filter"
 msgstr "Filtr"
 
-#: .\meters\templates\meters\reading_detail.html:52
-#: .\meters\templates\meters\reading_detail.html:134
-#: .\meters\templates\meters\report.html:21
+#: meters/templates/meters/reading_detail.html:52
+#: meters/templates/meters/reading_detail.html:134
+#: meters/templates/meters/report.html:21
 msgid "Month"
 msgstr "Měsíc"
 
-#: .\meters\templates\meters\reading_detail.html:64
+#: meters/templates/meters/reading_detail.html:64
+#: meters/templates/overview/overview.html:38
 msgid "Sum"
 msgstr "Součet"
 
-#: .\meters\templates\meters\reading_detail.html:76
+#: meters/templates/meters/reading_detail.html:76
 msgid "Monthly trend"
 msgstr "Měsíční trend"
 
-#: .\meters\templates\meters\reading_detail.html:82
+#: meters/templates/meters/reading_detail.html:82
 msgid "No data available to display the chart."
 msgstr "Pro zobrazení grafu nejsou k dispozici žádná data."
 
-#: .\meters\templates\meters\reading_form.html:13
+#: meters/templates/meters/reading_form.html:14
+#, fuzzy
+#| msgid "Enter new reading for"
+msgid "Edit current month reading for"
+msgstr "Zadejte nový odečet pro"
+
+#: meters/templates/meters/reading_form.html:16
 msgid "Enter new reading for"
 msgstr "Zadejte nový odečet pro"
 
-#: .\meters\templates\meters\reading_form.html:32
-#: .\users\templates\users\profile.html:41
+#: meters/templates/meters/reading_form.html:36
+#: users/templates/users/profile.html:26
 msgid "Save"
 msgstr "Uložit"
 
-#: .\meters\templates\meters\report.html:13
+#: meters/templates/meters/report.html:13
 msgid "Monthly Report"
 msgstr "Měsíční přehled"
 
-#: .\meters\templates\meters\report.html:22
+#: meters/templates/meters/report.html:22
+#: meters/templates/overview/overview.html:33
+#: meters/templates/overview/overview_pdf.html:23
 msgid "Total"
 msgstr "Celkem"
 
-#: .\meters\templates\meters\report.html:34
+#: meters/templates/meters/report.html:34
 msgid "No data available."
 msgstr "Nejsou k dispozici žádná data."
 
-#: .\templates\base.html:9
+#: meters/templates/overview/overview.html:13
+msgid "Meters by type value"
+msgstr "Hodnota podle typů měřičů"
+
+#: meters/templates/overview/overview.html:15
+msgid "Export to PDF"
+msgstr "Otevřít v PDF"
+
+#: meters/templates/overview/overview.html:32
+msgid "Label"
+msgstr "Označení"
+
+#: meters/views.py:190 templates/sidebar_menu.html:23
+msgid "Overview"
+msgstr "Přehled"
+
+#: templates/base.html:9
 msgid "Evidence Spotreby"
 msgstr "Evidence Spotřeby"
 
-#: .\templates\base.html:131
+#: templates/base.html:147
 msgid "Start with choosing your airplane"
 msgstr "Začněte výběrem svého letadla"
 
-#: .\templates\base.html:134
+#: templates/base.html:150
 msgid "Domains list"
 msgstr "Seznam domén"
 
-#: .\templates\base.html:139
+#: templates/base.html:155
 msgid "Your account notifications"
 msgstr "Upozornění vašeho účtu"
 
-#: .\templates\header.html:31
+#: templates/header.html:31
 msgid "Very important person"
 msgstr "Velmi důležitá osoba"
 
-#: .\templates\header.html:50
-#, python-format
-msgid "Hello, %(user.username)s!"
+#: templates/header.html:50
+#, fuzzy, python-format
+#| msgid "Hello, %(user.username)s!"
+msgid "Hello, %(username)s!"
 msgstr "Dobrý den, %(user.username)s!"
 
-#: .\templates\header.html:56
+#: templates/header.html:56
 msgid "My Profile"
 msgstr "Můj profil"
 
-#: .\templates\header.html:66
+#: templates/header.html:66
 msgid "Change Password"
 msgstr "Změnit heslo"
 
-#: .\templates\header.html:71
-msgid "2FA Settings"
-msgstr "Nastavení 2FA"
-
-#: .\templates\header.html:78
+#: templates/header.html:78
 msgid "Logout"
 msgstr "Odhlásit se"
 
-#: .\templates\registration\account_activation_complete.html:5
-#: .\templates\registration\create_account.html:5
+#: templates/registration/account_activation_complete.html:5
+#: templates/registration/create_account.html:5
 msgid "New Account - Virusfree Mail Admin"
 msgstr "Nový účet - Virusfree Mail Admin"
 
-#: .\templates\registration\account_activation_complete.html:11
+#: templates/registration/account_activation_complete.html:11
 msgid "Your account has been activated. Please login to continue."
 msgstr "Váš účet byl aktivován. Přihlaste se prosím pro pokračování."
 
-#: .\templates\registration\account_activation_complete.html:16
-#: .\templates\registration\login.html:9 .\templates\registration\login.html:34
-#: .\templates\registration\password_reset.html:31
-#: .\templates\registration\password_reset_complete.html:17
-#: .\templates\registration\password_reset_sent.html:16
-#: .\templates\two_factor\core\login.html:14
+#: templates/registration/account_activation_complete.html:16
+#: templates/registration/login.html:9 templates/registration/login.html:34
+#: templates/registration/password_reset.html:31
+#: templates/registration/password_reset_complete.html:17
+#: templates/registration/password_reset_sent.html:16
+#: templates/two_factor/core/login.html:14
 msgid "Log in"
 msgstr "Přihlásit se"
 
-#: .\templates\registration\create_account.html:13
+#: templates/registration/create_account.html:13
 msgid "Account information:"
 msgstr "Informace o účtu:"
 
-#: .\templates\registration\create_account.html:45
+#: templates/registration/create_account.html:45
 msgid "Personal information:"
 msgstr "Osobní údaje:"
 
-#: .\templates\registration\create_account.html:85
+#: templates/registration/create_account.html:85
 msgid "Create new account"
 msgstr "Vytvořit nový účet"
 
-#: .\templates\registration\create_account.html:91
-#: .\templates\registration\password_reset_confirm.html:41
+#: templates/registration/create_account.html:91
+#: templates/registration/password_reset_confirm.html:41
 msgid ""
 "Looks like you clicked on an invalid password reset link. Please request a "
 "new link."
@@ -389,69 +442,67 @@ msgstr ""
 "Vypadá to, že jste klikli na neplatný odkaz pro reset hesla. Požádejte "
 "prosím o nový odkaz."
 
-#: .\templates\registration\login.html:5
+#: templates/registration/login.html:5
 msgid "Login - Virusfree Mail Admin"
 msgstr "Přihlášení - Virusfree Mail Admin"
 
-#: .\templates\registration\login.html:11
+#: templates/registration/login.html:11
 msgid "Type your credentials and enjoy your stay."
 msgstr "Zadejte své přihlašovací údaje a pokračujte."
 
-#: .\templates\registration\login.html:40
-#: .\templates\two_factor\core\login.html:67
+#: templates/registration/login.html:40 templates/two_factor/core/login.html:67
 msgid "Forgot password?"
 msgstr "Zapomněli jste heslo?"
 
-#: .\templates\registration\password_change_done.html:5
-#: .\templates\registration\password_change_form.html:6
-#: .\users\templates\users\profile.html:6
+#: templates/registration/password_change_done.html:5
+#: templates/registration/password_change_form.html:6
 msgid "My domains"
 msgstr "Mé domény"
 
-#: .\templates\registration\password_change_form.html:67
-#: .\users\templates\users\profile.html:128
+#: templates/registration/password_change_form.html:67
+#: users/templates/users/profile.html:113
 msgid "Change password"
 msgstr "Změnit heslo"
 
-#: .\templates\registration\password_reset.html:5
+#: templates/registration/password_reset.html:5
 msgid "Forgot Password - Virusfree Mail Admin"
 msgstr "Zapomenuté heslo - Virusfree Mail Admin"
 
-#: .\templates\registration\password_reset.html:9
+#: templates/registration/password_reset.html:9
 msgid "Forgot Password?"
 msgstr "Zapomněli jste heslo?"
 
-#: .\templates\registration\password_reset.html:11
+#: templates/registration/password_reset.html:11
 msgid ""
 "Enter your e-mail. We will send you a link to initiate the password recovery."
 msgstr "Zadejte svůj e‑mail. Pošleme vám odkaz pro zahájení obnovy hesla."
 
-#: .\templates\registration\password_reset.html:25
+#: templates/registration/password_reset.html:25
 msgid "Send"
 msgstr "Odeslat"
 
-#: .\templates\registration\password_reset.html:30
-#: .\templates\registration\password_reset_sent.html:15
+#: templates/registration/password_reset.html:30
+#: templates/registration/password_reset_sent.html:15
 msgid "Return to"
 msgstr "Zpět na"
 
-#: .\templates\registration\password_reset_complete.html:5
+#: templates/registration/password_reset_complete.html:5
 msgid "Password Reset - Virusfree Mail Admin"
 msgstr "Obnovení hesla - Virusfree Mail Admin"
 
-#: .\templates\registration\password_reset_complete.html:10
+#: templates/registration/password_reset_complete.html:10
 msgid "Password reset complete"
 msgstr "Obnovení hesla dokončeno"
 
-#: .\templates\registration\password_reset_complete.html:12
+#: templates/registration/password_reset_complete.html:12
 msgid "Your password has been set. You may go ahead and log in now."
 msgstr "Vaše heslo bylo nastaveno. Nyní se můžete přihlásit."
 
-#: .\templates\registration\password_reset_confirm.html:2
+#: templates/registration/password_reset_confirm.html:2
 msgid "New Password - Virusfree Mail Admin"
 msgstr "Nové heslo - Virusfree Mail Admin"
 
-#: .\templates\registration\password_reset_confirm.html:8
+#: templates/registration/password_reset_confirm.html:8
 msgid ""
 "Please enter your new password twice so we can verify you typed it in "
 "correctly."
@@ -459,11 +510,11 @@ msgstr ""
 "Zadejte prosím nové heslo dvakrát, abychom ověřili, že jste jej zadali "
 "správně."
 
-#: .\templates\registration\password_reset_confirm.html:35
+#: templates/registration/password_reset_confirm.html:35
 msgid "Submit"
 msgstr "Odeslat"
 
-#: .\templates\registration\password_reset_email.html:2
+#: templates/registration/password_reset_email.html:2
 #, python-format
 msgid ""
 "You're receiving this email because you requested a password reset for your "
@@ -472,7 +523,7 @@ msgstr ""
 "Tento e‑mail jste obdrželi, protože jste požádali o reset hesla pro svůj "
 "uživatelský účet na %(site_name)s."
 
-#: .\templates\registration\password_reset_email.html:4
+#: templates/registration/password_reset_email.html:4
 msgid ""
 "Please click on the link below or copy and paste it into the browser, and "
 "follow the instructions."
@@ -480,23 +531,23 @@ msgstr ""
 "Klikněte prosím na odkaz níže nebo jej zkopírujte do prohlížeče a postupujte "
 "podle pokynů."
 
-#: .\templates\registration\password_reset_email.html:9
+#: templates/registration/password_reset_email.html:9
 msgid "Thanks for using our site!"
 msgstr "Děkujeme za používání našich stránek!"
 
-#: .\templates\registration\password_reset_email.html:11
+#: templates/registration/password_reset_email.html:11
 msgid "The Virusfree.cz team"
 msgstr "Tým Virusfree.cz"
 
-#: .\templates\registration\password_reset_sent.html:5
+#: templates/registration/password_reset_sent.html:5
 msgid "Email Sent - Virusfree Mail Admin"
 msgstr "E-mail odeslán - Virusfree Mail Admin"
 
-#: .\templates\registration\password_reset_sent.html:9
+#: templates/registration/password_reset_sent.html:9
 msgid "Email Sent"
 msgstr "E-mail odeslán"
 
-#: .\templates\registration\password_reset_sent.html:11
+#: templates/registration/password_reset_sent.html:11
 msgid ""
 "If there is an account associated with the email you provided, you should "
 "receive an email containing instructions on how to set your password."
@@ -504,147 +555,160 @@ msgstr ""
 "Pokud je s poskytnutým e‑mailem spojen účet, obdržíte e‑mail s pokyny, jak "
 "nastavit své heslo."
 
-#: .\templates\registration\password_reset_subject.txt:2
+#: templates/registration/password_reset_subject.txt:2
 #, python-format
 msgid "Password reset instructions for %(site_name)s"
 msgstr "Pokyny k resetu hesla pro %(site_name)s"
 
-#: .\templates\sidebar_menu.html:68
+#: templates/sidebar_menu.html:9
 msgid "Service menu"
 msgstr "Servisní menu"
 
-#: .\templates\two_factor\_wizard_actions.html:4
-#: .\templates\two_factor\_wizard_actions.html:23
+#: templates/two_factor/_wizard_actions.html:4
+#: templates/two_factor/_wizard_actions.html:23
 msgid "Next"
 msgstr "Další"
 
-#: .\templates\two_factor\_wizard_actions.html:10
+#: templates/two_factor/_wizard_actions.html:10
 msgid "Back"
 msgstr "Zpět"
 
-#: .\templates\two_factor\_wizard_actions.html:18
-#: .\templates\two_factor\_wizard_actions.html:27
-#: .\users\templates\users\profile.html:45
+#: templates/two_factor/_wizard_actions.html:18
+#: templates/two_factor/_wizard_actions.html:27
+#: users/templates/users/profile.html:30
 msgid "Cancel"
 msgstr "Zrušit"
 
-#: .\templates\two_factor\core\backup_tokens.html:7
-#: .\templates\two_factor\profile\profile.html:34
+#: templates/two_factor/core/backup_tokens.html:7
+#: templates/two_factor/profile/profile.html:34
 msgid "Backup Tokens"
 msgstr "Záložní kódy"
 
-#: .\templates\two_factor\core\backup_tokens.html:8
+#: templates/two_factor/core/backup_tokens.html:8
 msgid ""
 "Backup tokens can be used when your primary and backup phone numbers aren't "
 "available. The backup tokens below can be used for login verification. If "
 "you've used up all your backup tokens, you can generate a new set of backup "
 "tokens. Only the backup tokens shown below will be valid."
-msgstr "Záložní kódy lze použít, když nejsou dostupná vaše primární ani záložní telefonní čísla. Níže uvedené záložní kódy lze použít k ověření přihlášení. Pokud jste všechny záložní kódy vyčerpali, můžete vygenerovat novou sadu. Platné budou pouze kódy zobrazené níže."
+msgstr ""
+"Záložní kódy lze použít, když nejsou dostupná vaše primární ani záložní "
+"telefonní čísla. Níže uvedené záložní kódy lze použít k ověření přihlášení. "
+"Pokud jste všechny záložní kódy vyčerpali, můžete vygenerovat novou sadu. "
+"Platné budou pouze kódy zobrazené níže."
 
-#: .\templates\two_factor\core\backup_tokens.html:20
+#: templates/two_factor/core/backup_tokens.html:20
 msgid "Print these tokens and keep them somewhere safe."
 msgstr "Tyto kódy si vytiskněte a uschovejte na bezpečném místě."
 
-#: .\templates\two_factor\core\backup_tokens.html:22
+#: templates/two_factor/core/backup_tokens.html:22
 msgid "You don't have any backup codes yet."
 msgstr "Zatím nemáte žádné záložní kódy."
 
-#: .\templates\two_factor\core\backup_tokens.html:27
-#: .\templates\two_factor\core\setup_complete.html:20
-#: .\templates\two_factor\core\setup_complete.html:28
+#: templates/two_factor/core/backup_tokens.html:27
+#: templates/two_factor/core/setup_complete.html:20
+#: templates/two_factor/core/setup_complete.html:28
 msgid "Back to Account Security"
 msgstr "Zpět na zabezpečení účtu"
 
-#: .\templates\two_factor\core\backup_tokens.html:28
+#: templates/two_factor/core/backup_tokens.html:28
 msgid "Generate Tokens"
 msgstr "Vygenerovat kódy"
 
-#: .\templates\two_factor\core\login.html:10
+#: templates/two_factor/core/login.html:10
 msgid "Login - Evidence Spotreby Admin"
 msgstr "Přihlášení - Evidence Spotřeby Admin"
 
-#: .\templates\two_factor\core\login.html:16
+#: templates/two_factor/core/login.html:16
 msgid "Don't share your credentials."
 msgstr "Nesdílejte své přihlašovací údaje."
 
-#: .\templates\two_factor\core\login.html:20
+#: templates/two_factor/core/login.html:20
 msgid ""
 "Use this form for entering backup tokens for logging in. These tokens have "
 "been generated for you to print and keep safe. Please enter one of these "
 "backup tokens to login to your account."
-msgstr "Tento formulář použijte pro zadání záložních kódů k přihlášení. Tyto kódy byly vygenerovány k vytištění a bezpečnému uložení. Zadejte prosím jeden z těchto záložních kódů pro přihlášení do svého účtu."
+msgstr ""
+"Tento formulář použijte pro zadání záložních kódů k přihlášení. Tyto kódy "
+"byly vygenerovány k vytištění a bezpečnému uložení. Zadejte prosím jeden z "
+"těchto záložních kódů pro přihlášení do svého účtu."
 
-#: .\templates\two_factor\core\login.html:32
+#: templates/two_factor/core/login.html:32
 msgid "Or, alternatively, use one of your other authentication methods:"
 msgstr "Případně použijte jednu z vašich dalších metod ověření:"
 
-#: .\templates\two_factor\core\login.html:52
+#: templates/two_factor/core/login.html:52
 msgid "As a last resort, you can use a backup token:"
 msgstr "Jako poslední možnost můžete použít záložní kód:"
 
-#: .\templates\two_factor\core\login.html:55
+#: templates/two_factor/core/login.html:55
 msgid "Use Backup Token"
 msgstr "Použít záložní kód"
 
-#: .\templates\two_factor\core\setup.html:4
-#: .\templates\two_factor\core\setup.html:11
-#: .\templates\two_factor\core\setup_complete.html:4
-#: .\templates\two_factor\core\setup_complete.html:7
-#: .\templates\two_factor\profile\profile.html:62
+#: templates/two_factor/core/setup.html:4
+#: templates/two_factor/core/setup.html:11
+#: templates/two_factor/core/setup_complete.html:4
+#: templates/two_factor/core/setup_complete.html:7
+#: templates/two_factor/profile/profile.html:62
 msgid "Enable Two-Factor Authentication"
 msgstr "Zapnout dvoufázové ověřování"
 
-#: .\templates\two_factor\core\setup.html:13
+#: templates/two_factor/core/setup.html:13
 msgid ""
 "You are about to take your account security to the next level. Follow the "
 "steps in this wizard to enable two-factor authentication."
-msgstr "Chystáte se posunout zabezpečení svého účtu na vyšší úroveň. Postupujte podle kroků v tomto průvodci, abyste zapnuli dvoufázové ověřování."
+msgstr ""
+"Chystáte se posunout zabezpečení svého účtu na vyšší úroveň. Postupujte "
+"podle kroků v tomto průvodci, abyste zapnuli dvoufázové ověřování."
 
-#: .\templates\two_factor\core\setup.html:17
+#: templates/two_factor/core/setup.html:17
 msgid "Please select which authentication method you would like to use."
 msgstr "Vyberte prosím metodu ověřování, kterou chcete používat."
 
-#: .\templates\two_factor\core\setup.html:20
+#: templates/two_factor/core/setup.html:20
 msgid ""
 "To start using a token generator, please use your smartphone to scan the QR "
 "code below. For example, use Google Authenticator."
-msgstr "Chcete-li začít používat generátor kódů, naskenujte pomocí svého telefonu níže uvedený QR kód. Například použijte Google Authenticator."
+msgstr ""
+"Chcete-li začít používat generátor kódů, naskenujte pomocí svého telefonu "
+"níže uvedený QR kód. Například použijte Google Authenticator."
 
-#: .\templates\two_factor\core\setup.html:24
+#: templates/two_factor/core/setup.html:24
 msgid ""
 "Alternatively you can use the following secret to setup TOTP in your "
 "authenticator or password manager manually."
-msgstr "Případně můžete použít následující tajný klíč a nastavit TOTP ručně ve své autentizační aplikaci nebo správci hesel."
+msgstr ""
+"Případně můžete použít následující tajný klíč a nastavit TOTP ručně ve své "
+"autentizační aplikaci nebo správci hesel."
 
-#: .\templates\two_factor\core\setup.html:26
+#: templates/two_factor/core/setup.html:26
 msgid "TOTP Secret:"
 msgstr "TOTP tajný klíč:"
 
-#: .\templates\two_factor\core\setup.html:27
+#: templates/two_factor/core/setup.html:27
 msgid "Then, enter the token generated by the app."
 msgstr "Poté zadejte kód vygenerovaný aplikací."
 
-#: .\templates\two_factor\core\setup.html:30
+#: templates/two_factor/core/setup.html:30
 msgid ""
 "Please enter the phone number you wish to receive the text messages on. This "
 "number will be validated in the next step."
 msgstr ""
 
-#: .\templates\two_factor\core\setup.html:34
+#: templates/two_factor/core/setup.html:34
 msgid ""
 "Please enter the phone number you wish to be called on. This number will be "
 "validated in the next step."
 msgstr ""
 
-#: .\templates\two_factor\core\setup.html:39
+#: templates/two_factor/core/setup.html:39
 msgid "We are calling your phone right now, please enter the digits you hear."
 msgstr ""
 
-#: .\templates\two_factor\core\setup.html:42
+#: templates/two_factor/core/setup.html:42
 msgid "We sent you a text message, please enter the tokens we sent."
 msgstr ""
 
-#: .\templates\two_factor\core\setup.html:46
+#: templates/two_factor/core/setup.html:46
 msgid ""
 "We've encountered an issue with the selected authentication method. Please "
 "go back and verify that you entered your information correctly, try again, "
@@ -652,83 +716,83 @@ msgid ""
 "contact the site administrator."
 msgstr ""
 
-#: .\templates\two_factor\core\setup.html:53
+#: templates/two_factor/core/setup.html:53
 msgid ""
 "To identify and verify your YubiKey, please insert a token in the field "
 "below. Your YubiKey will be linked to your account."
 msgstr ""
 
-#: .\templates\two_factor\core\setup_complete.html:12
+#: templates/two_factor/core/setup_complete.html:12
 msgid "Congratulations, you've successfully enabled two-factor authentication."
 msgstr ""
 
-#: .\templates\two_factor\core\setup_complete.html:17
+#: templates/two_factor/core/setup_complete.html:17
 msgid "Begin Your Experience"
 msgstr ""
 
-#: .\templates\two_factor\core\setup_complete.html:23
+#: templates/two_factor/core/setup_complete.html:23
 msgid ""
 "However, it might happen that you don't have access to your primary token "
 "device. To enable account recovery, add a phone number."
 msgstr ""
 
-#: .\templates\two_factor\core\setup_complete.html:30
-#: .\templates\two_factor\profile\profile.html:31
+#: templates/two_factor/core/setup_complete.html:30
+#: templates/two_factor/profile/profile.html:31
 #, fuzzy
 #| msgid "Phone number"
 msgid "Add Phone Number"
 msgstr "Telefonní číslo"
 
-#: .\templates\two_factor\profile\disable.html:8
+#: templates/two_factor/profile/disable.html:8
 msgid "Disable Two-factor Authentication"
 msgstr ""
 
-#: .\templates\two_factor\profile\disable.html:9
+#: templates/two_factor/profile/disable.html:9
 msgid ""
 "You are about to disable two-factor authentication. This weakens your "
 "account security, are you sure?"
 msgstr ""
 
-#: .\templates\two_factor\profile\disable.html:21
+#: templates/two_factor/profile/disable.html:21
 msgid "Disable"
 msgstr ""
 
-#: .\templates\two_factor\profile\profile.html:8
+#: templates/two_factor/profile/profile.html:8
 msgid "Account Security"
 msgstr ""
 
-#: .\templates\two_factor\profile\profile.html:11
+#: templates/two_factor/profile/profile.html:11
 #, python-format
 msgid "Primary method: %(primary)s"
 msgstr ""
 
-#: .\templates\two_factor\profile\profile.html:14
+#: templates/two_factor/profile/profile.html:14
 #, fuzzy
 #| msgid "Phone number"
 msgid "Backup Phone Numbers"
 msgstr "Telefonní číslo"
 
-#: .\templates\two_factor\profile\profile.html:15
+#: templates/two_factor/profile/profile.html:15
 msgid ""
 "If your primary method is not available, we are able to send backup tokens "
 "to the phone numbers listed below."
 msgstr ""
 
-#: .\templates\two_factor\profile\profile.html:22
+#: templates/two_factor/profile/profile.html:22
 msgid "Are you sure?"
 msgstr ""
 
-#: .\templates\two_factor\profile\profile.html:25
+#: templates/two_factor/profile/profile.html:25
 msgid "Unregister"
 msgstr ""
 
-#: .\templates\two_factor\profile\profile.html:36
+#: templates/two_factor/profile/profile.html:36
 msgid ""
 "If you don't have any device with you, you can access your account using "
 "backup tokens."
 msgstr ""
 
-#: .\templates\two_factor\profile\profile.html:38
+#: templates/two_factor/profile/profile.html:38
 #, python-format
 msgid "You have only one backup token remaining."
 msgid_plural "You have %(counter)s backup tokens remaining."
@@ -736,131 +800,1322 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: .\templates\two_factor\profile\profile.html:45
+#: templates/two_factor/profile/profile.html:45
 msgid "Show Codes"
 msgstr ""
 
-#: .\templates\two_factor\profile\profile.html:47
-#: .\templates\two_factor\profile\profile.html:51
+#: templates/two_factor/profile/profile.html:47
+#: templates/two_factor/profile/profile.html:51
 msgid "Disable Two-Factor Authentication"
 msgstr ""
 
-#: .\templates\two_factor\profile\profile.html:48
+#: templates/two_factor/profile/profile.html:48
 msgid ""
 "However we strongly discourage you to do so, you can also disable two-factor "
 "authentication for your account."
 msgstr ""
 
-#: .\templates\two_factor\profile\profile.html:54
+#: templates/two_factor/profile/profile.html:54
 msgid "Exit Account Security"
 msgstr ""
 
-#: .\templates\two_factor\profile\profile.html:58
+#: templates/two_factor/profile/profile.html:58
 msgid ""
 "Two-factor authentication is not enabled for your account. Enable two-factor "
 "authentication for enhanced account security."
 msgstr ""
 
-#: .\templates\two_factor\profile\profile.html:66
+#: templates/two_factor/profile/profile.html:66
 msgid "I don't want to secure my account"
 msgstr ""
 
-#: .\users\forms.py:67
+#: users/forms.py:67
 msgid "Token"
 msgstr "Token"
 
-#: .\users\forms.py:176
+#: users/forms.py:176
 msgid "Email"
 msgstr "E-mail"
 
-#: .\users\forms.py:180
+#: users/forms.py:180
 msgid "E-mail"
 msgstr "E-mail"
 
-#: .\users\forms.py:183
+#: users/forms.py:183
 msgid "First Name"
 msgstr "Křestní jméno"
 
-#: .\users\forms.py:187
+#: users/forms.py:187
 msgid "First name"
 msgstr "Jméno"
 
-#: .\users\forms.py:190
+#: users/forms.py:190
 msgid "Last Name"
 msgstr "Příjmení"
 
-#: .\users\forms.py:194
+#: users/forms.py:194
 msgid "Last name"
 msgstr "Příjmení"
 
-#: .\users\forms.py:197 .\users\forms.py:201 .\users\models.py:17
+#: users/forms.py:197 users/forms.py:201 users/models.py:17
 msgid "Organization"
 msgstr "Organizace"
 
-#: .\users\forms.py:204 .\users\forms.py:210 .\users\models.py:18
+#: users/forms.py:204 users/forms.py:210 users/models.py:18
 msgid "Phone number"
 msgstr "Telefonní číslo"
 
-#: .\users\models.py:13
+#: users/models.py:13
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1920
 msgid "Email address"
 msgstr "E-mailová adresa"
 
-#: .\users\models.py:15
+#: users/models.py:15
 msgid "Parent"
 msgstr "Nadřazený"
 
-#: .\users\models.py:19
+#: users/models.py:19
 msgid "Language"
 msgstr "Jazyk"
 
-#: .\users\models.py:21
+#: users/models.py:21
 msgid "Date activated"
 msgstr "Datum aktivace"
 
-#: .\users\models.py:23
+#: users/models.py:23
 msgid "Active token"
 msgstr "Aktivní token"
 
-#: .\users\templates\users\profile.html:31
+#: users/templates/users/profile.html:16
 msgid "Contact details"
 msgstr "Kontaktní údaje"
 
-#: .\users\templates\users\profile.html:50
+#: users/templates/users/profile.html:35
 msgid "Edit"
 msgstr "Upravit"
 
-#: .\users\templates\users\profile.html:120
+#: users/templates/users/profile.html:105
 msgid "Account information"
 msgstr "Informace o účtu"
 
-#: .\users\templates\users\profile.html:138
+#: users/templates/users/profile.html:123
 msgid "Username"
 msgstr "Uživatelské jméno"
 
-#: .\users\templates\users\profile.html:145
+#: users/templates/users/profile.html:130
 msgid "Password"
 msgstr "Heslo"
 
-#: .\users\views.py:74
+#: users/views.py:53
 msgid "User profile updated successfully"
 msgstr "Uživatelský profil byl úspěšně aktualizován"
 
-#: .\users\views.py:78
+#: users/views.py:57
 msgid "Failed to update user profile."
 msgstr "Aktualizace uživatelského profilu se nezdařila."
 
-#: .\users\views.py:127
+#: users/views.py:106
 msgid "Your session has timed out. Please login again."
 msgstr "Vaše relace vypršela. Přihlaste se prosím znovu."
 
-#: .\users\views.py:221
+#: users/views.py:200
 msgid "Create account"
 msgstr "Vytvořit účet"
 
-#: .\users\views.py:226
+#: users/views.py:205
 msgid "Activation complete"
 msgstr "Aktivace dokončena"
 
-#: .\users\views.py:235
+#: users/views.py:214
 msgid "Your password was successfully updated!"
 msgstr "Vaše heslo bylo úspěšně aktualizováno!"
+
+#: venv/lib/python3.12/site-packages/django/contrib/messages/apps.py:16
+msgid "Messages"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/contrib/sitemaps/apps.py:8
+msgid "Site Maps"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/contrib/staticfiles/apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/contrib/syndication/apps.py:7
+#, fuzzy
+#| msgid "Organization"
+msgid "Syndication"
+msgstr "Organizace"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: venv/lib/python3.12/site-packages/django/core/paginator.py:30
+msgid "…"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/paginator.py:32
+msgid "That page number is not an integer"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/paginator.py:33
+msgid "That page number is less than 1"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/paginator.py:34
+msgid "That page contains no results"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:22
+msgid "Enter a valid value."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:70
+msgid "Enter a valid domain name."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:153
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:775
+msgid "Enter a valid URL."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:200
+#, fuzzy
+#| msgid "Enter new reading for"
+msgid "Enter a valid integer."
+msgstr "Zadejte nový odečet pro"
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:211
+#, fuzzy
+#| msgid "Email address"
+msgid "Enter a valid email address."
+msgstr "E-mailová adresa"
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: venv/lib/python3.12/site-packages/django/core/validators.py:289
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:297
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:309
+#: venv/lib/python3.12/site-packages/django/core/validators.py:318
+#: venv/lib/python3.12/site-packages/django/core/validators.py:332
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2220
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:311
+msgid "IPv4"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:320
+#: venv/lib/python3.12/site-packages/django/utils/ipv6.py:43
+msgid "IPv6"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:334
+msgid "IPv4 or IPv6"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:375
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:381
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:416
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:425
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:434
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:441
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:473
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:491
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:514
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:366
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:405
+#, fuzzy
+#| msgid "Phone number"
+msgid "Enter a number."
+msgstr "Telefonní číslo"
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:516
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:521
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:526
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:597
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/core/validators.py:659
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/base.py:1600
+#: venv/lib/python3.12/site-packages/django/forms/models.py:908
+#, fuzzy
+#| msgid "jan"
+msgid "and"
+msgstr "led"
+
+#: venv/lib/python3.12/site-packages/django/db/models/base.py:1602
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/constraints.py:22
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:135
+msgid "This field cannot be null."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:136
+msgid "This field cannot be blank."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1162
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1163
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1165
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1215
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1217
+msgid "String (unlimited)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1326
+msgid "Comma-separated integers"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1427
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1431
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1566
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1435
+msgid "Date (without time)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1562
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1570
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1575
+msgid "Date (with time)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1702
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1704
+#, fuzzy
+#| msgid "December"
+msgid "Decimal number"
+msgstr "prosinec"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1864
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1868
+#, fuzzy
+#| msgid "Organization"
+msgid "Duration"
+msgstr "Organizace"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1945
+msgid "File path"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2023
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2025
+msgid "Floating point number"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2065
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2067
+msgid "Integer"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2163
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2180
+msgid "Small integer"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2188
+#, fuzzy
+#| msgid "Email address"
+msgid "IPv4 address"
+msgstr "E-mailová adresa"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2219
+#, fuzzy
+#| msgid "Email address"
+msgid "IP address"
+msgstr "E-mailová adresa"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2310
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2311
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2313
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2364
+msgid "Positive big integer"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2379
+msgid "Positive integer"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2394
+msgid "Positive small integer"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2410
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2446
+msgid "Text"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2526
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2530
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2534
+#, fuzzy
+#| msgid "Timestamp"
+msgid "Time"
+msgstr "Časové razítko"
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2642
+msgid "URL"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2666
+msgid "Raw binary data"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2731
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2733
+msgid "Universally unique identifier"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/files.py:244
+msgid "File"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/files.py:420
+msgid "Image"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/json.py:24
+msgid "A JSON object"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/json.py:26
+msgid "Value must be valid JSON."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:979
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:982
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1276
+msgid "One-to-one relationship"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1333
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1335
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/db/models/fields/related.py:1383
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: venv/lib/python3.12/site-packages/django/forms/boundfield.py:185
+msgid ":?.!"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:95
+msgid "This field is required."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:315
+#, fuzzy
+#| msgid "Phone number"
+msgid "Enter a whole number."
+msgstr "Telefonní číslo"
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:486
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1267
+msgid "Enter a valid date."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:509
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1268
+msgid "Enter a valid time."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:536
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:570
+msgid "Enter a valid duration."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:571
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:640
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:641
+msgid "No file was submitted."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:642
+msgid "The submitted file is empty."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:644
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:649
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:717
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:889
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:975
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1592
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:977
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1096
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1590
+msgid "Enter a list of values."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1097
+msgid "Enter a complete value."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1339
+msgid "Enter a valid UUID."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/fields.py:1369
+msgid "Enter a valid JSON."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: venv/lib/python3.12/site-packages/django/forms/forms.py:97
+msgid ":"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/forms.py:239
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:484
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/formsets.py:499
+msgid "Delete"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:901
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:906
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:913
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:922
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1359
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1450
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/models.py:1594
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/utils.py:229
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:527
+msgid "Clear"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:528
+msgid "Currently"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:529
+msgid "Change"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:866
+msgid "Unknown"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:867
+msgid "Yes"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/forms/widgets.py:868
+msgid "No"
+msgstr ""
+
+#. Translators: Please do not add spaces around commas.
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:873
+msgid "yes,no,maybe"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:903
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:920
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:922
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:924
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:926
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:928
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/template/defaultfilters.py:930
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:74
+msgid "p.m."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:75
+msgid "a.m."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:80
+msgid "PM"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:81
+msgid "AM"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:153
+msgid "midnight"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dateformat.py:155
+msgid "noon"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:16
+#, fuzzy
+#| msgid "Month"
+msgid "Mon"
+msgstr "Měsíc"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:17
+#, fuzzy
+#| msgid "tue"
+msgid "Tue"
+msgstr "út"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:18
+#, fuzzy
+#| msgid "wed"
+msgid "Wed"
+msgstr "st"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:19
+#, fuzzy
+#| msgid "thu"
+msgid "Thu"
+msgstr "čt"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:20
+#, fuzzy
+#| msgid "fri"
+msgid "Fri"
+msgstr "pá"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:21
+#, fuzzy
+#| msgid "sat"
+msgid "Sat"
+msgstr "so"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:22
+#, fuzzy
+#| msgid "jun"
+msgid "Sun"
+msgstr "čer"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:55
+#, fuzzy
+#| msgid "March"
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "březen"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:56
+#, fuzzy
+#| msgid "April"
+msgctxt "abbrev. month"
+msgid "April"
+msgstr "duben"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:57
+#, fuzzy
+#| msgid "May"
+msgctxt "abbrev. month"
+msgid "May"
+msgstr "květen"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:58
+#, fuzzy
+#| msgid "June"
+msgctxt "abbrev. month"
+msgid "June"
+msgstr "červen"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:59
+#, fuzzy
+#| msgid "July"
+msgctxt "abbrev. month"
+msgid "July"
+msgstr "červenec"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:67
+#, fuzzy
+#| msgid "January"
+msgctxt "alt. month"
+msgid "January"
+msgstr "leden"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:68
+#, fuzzy
+#| msgid "February"
+msgctxt "alt. month"
+msgid "February"
+msgstr "únor"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:69
+#, fuzzy
+#| msgid "March"
+msgctxt "alt. month"
+msgid "March"
+msgstr "březen"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:70
+#, fuzzy
+#| msgid "April"
+msgctxt "alt. month"
+msgid "April"
+msgstr "duben"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:71
+#, fuzzy
+#| msgid "May"
+msgctxt "alt. month"
+msgid "May"
+msgstr "květen"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:72
+#, fuzzy
+#| msgid "June"
+msgctxt "alt. month"
+msgid "June"
+msgstr "červen"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:73
+#, fuzzy
+#| msgid "July"
+msgctxt "alt. month"
+msgid "July"
+msgstr "červenec"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:74
+#, fuzzy
+#| msgid "August"
+msgctxt "alt. month"
+msgid "August"
+msgstr "srpen"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:75
+#, fuzzy
+#| msgid "September"
+msgctxt "alt. month"
+msgid "September"
+msgstr "září"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:76
+#, fuzzy
+#| msgid "October"
+msgctxt "alt. month"
+msgid "October"
+msgstr "říjen"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:77
+#, fuzzy
+#| msgid "November"
+msgctxt "alt. month"
+msgid "November"
+msgstr "listopad"
+
+#: venv/lib/python3.12/site-packages/django/utils/dates.py:78
+#, fuzzy
+#| msgid "December"
+msgctxt "alt. month"
+msgid "December"
+msgstr "prosinec"
+
+#: venv/lib/python3.12/site-packages/django/utils/ipv6.py:20
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/text.py:76
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/text.py:287
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: venv/lib/python3.12/site-packages/django/utils/text.py:306
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:135
+msgid ", "
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:9
+#, fuzzy, python-format
+#| msgid "End month"
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] "Koncový měsíc"
+msgstr[1] "Koncový měsíc"
+msgstr[2] "Koncový měsíc"
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: venv/lib/python3.12/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:29
+msgid "Forbidden"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:44
+msgid "No year specified"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:64
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:115
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:214
+msgid "Date out of range"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:94
+msgid "No month specified"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:147
+msgid "No day specified"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:194
+msgid "No week specified"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:353
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:384
+#, fuzzy, python-format
+#| msgid "No meters available."
+msgid "No %(verbose_name_plural)s available"
+msgstr "Žádné měřiče nejsou k dispozici."
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:680
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/dates.py:720
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/generic/list.py:173
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/static.py:68
+#: venv/lib/python3.12/site-packages/django/views/templates/directory_index.html:8
+#: venv/lib/python3.12/site-packages/django/views/templates/directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:7
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:217
+msgid "Django Documentation"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:227
+msgid "Get started with Django"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:235
+msgid "Django Community"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: venv/lib/python3.12/site-packages/ipware/apps.py:10
+msgid "ipware app"
+msgstr ""
+
+#~ msgid "2FA Settings"
+#~ msgstr "Nastavení 2FA"

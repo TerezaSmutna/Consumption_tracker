@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-_!ikrb(j5lsaz9q%4rsw7$vs-33#+jo+3u1+&-14xq=4v+2_&=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','localhost']
 
 # Application definition
 
@@ -195,11 +195,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Security
 
-CSRF_COOKIE_HTTPONLY = True
-CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_HTTPONLY = False
+CSRF_COOKIE_SECURE = False
 CSRF_COOKIE_AGE = 60 * 60  # for example, 60 * 60 seconds = 1 hour
-SESSION_COOKIE_HTTPONLY = True  # It is true by default
-SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_HTTPONLY = False  # It is true by default
+SESSION_COOKIE_SECURE = False
 
 # E-mail config
 
