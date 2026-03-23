@@ -12,6 +12,8 @@ from django.utils.translation import gettext_lazy as _
 from django.http import HttpResponse
 from django.template.loader import get_template
 from xhtml2pdf import pisa
+from django.contrib.staticfiles import finders
+from django.conf import settings
 
 from .forms import ReadingForm, MonthRangeForm
 from .models import Meter, Reading
@@ -196,19 +198,23 @@ class OverviewView(TemplateView):
         return context
     
 
+def link_callback(uri, rel):
+    result = finders.find(uri.replace(settings.STATIC_URL, '', 1))
+    if result:
+        return result
+    return uri
+
 def overview_export_pdf(request):
     overview = get_overview_data()
-
-    template_path = 'overview/overview_pdf.html'
     context = {'overview': overview}
 
     response = HttpResponse(content_type='application/pdf')
     response['Content-Disposition'] = 'attachment; filename="overview.pdf"'
 
-    template = get_template(template_path)
+    template = get_template('overview/overview_pdf.html')
     html = template.render(context)
 
-    pisa_status = pisa.CreatePDF(html, dest=response)
+    pisa_status = pisa.CreatePDF(html, dest=response, encoding='UTF-8', link_callback=link_callback)
     if pisa_status.err:
         return HttpResponse('We had some errors <pre>' + html + '</pre>')
     return response

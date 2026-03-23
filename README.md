@@ -84,3 +84,6 @@ Notes:
 - By default, the current month is skipped; use --include-current to include it.
 - If no meter exists, a demo meter is created automatically.
 - Reading.timestamp uses auto_now_add, so the command creates then updates the timestamp to the target past month.
+
+# For downloading PDFs with czech alphabet:
+    - Download 'DejaVuSans.ttf' from 'https://github.com/dejavu-fonts/dejavu-fonts/releases' and save it under static/assets/fonts
