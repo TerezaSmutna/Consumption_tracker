@@ -31,6 +31,7 @@ class MeterType(models.Model):
 
 class Meter(models.Model):
     name = models.CharField(max_length=100, unique=True, verbose_name=_("Name"))
+    number = models.CharField(max_length=50, verbose_name=_("Number"))
     type = models.ForeignKey(MeterType, on_delete=models.CASCADE, related_name="meters", verbose_name=_("Type"))
     room = models.ForeignKey(Room, on_delete=models.CASCADE, related_name="meters", verbose_name=_("Room"))
     slug = models.SlugField(max_length=255, unique=True, blank=True, verbose_name=_("Slug"))

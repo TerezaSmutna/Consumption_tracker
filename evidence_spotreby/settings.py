@@ -87,6 +87,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'evidence_spotreby.context_processors.version',
+                'evidence_spotreby.context_processors.meter_types',
             ],
         },
     },

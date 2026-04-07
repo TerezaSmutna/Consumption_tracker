@@ -5,7 +5,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMix
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse_lazy
 from django.utils import timezone
-from django.views.generic import DetailView, CreateView, TemplateView, ListView, UpdateView
+from django.views.generic import DetailView, CreateView, TemplateView, ListView, UpdateView, View
 from django.db.models import Sum
 from django.db.models.functions import TruncMonth
 from django.utils.translation import gettext_lazy as _
@@ -16,9 +16,11 @@ from django.contrib.staticfiles import finders
 from django.conf import settings
 
 from .forms import ReadingForm, MonthRangeForm
-from .models import Meter, Reading
+from .models import Meter, Reading, MeterType, Room
 from .utils import get_current_month_range
-from .services import get_overview_data
+from .services import get_overview_data, get_meter_type_data
+from collections import defaultdict
+
 
 
 class MeterListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
@@ -28,12 +30,19 @@ class MeterListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
     paginate_by = 20
     permission_required = "meters.view_meter"
     
-class OverviewView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
-    model = Meter
-    template_name = "overview/overview.html"
-    context_object_name = "overview"
-    paginate_by = 20
+
+class BaseMeterPermissionView(PermissionRequiredMixin):
     permission_required = "meters.view_meter"
+    
+class OverviewView(BaseMeterPermissionView, View):
+    def get(self, request, *args, **kwargs):
+        first = MeterType.objects.order_by("id").first()
+
+        if not first:
+            return redirect("meter_list")
+
+        # ALWAYS go to first meter type
+        return redirect("meter_type_detail", pk=first.id)
 
 
 class ReadingCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
@@ -187,14 +196,85 @@ class ReportView(LoginRequiredMixin, PermissionRequiredMixin, TemplateView):
         return context
 
 
-class OverviewView(TemplateView):
-    template_name = "overview/overview.html"
-    title = _("Overview")
+class MeterTypeOverviewView(BaseMeterPermissionView, TemplateView):
+    template_name = "overview/meter_type_detail.html"
 
     def get_context_data(self, **kwargs):
-        
         context = super().get_context_data(**kwargs)
-        context["overview"] = get_overview_data()
+
+        meter_type = MeterType.objects.get(pk=self.kwargs["pk"])
+        mode = self.request.GET.get("mode", "monthly")
+
+        selected_years = self.request.GET.getlist("years")
+        selected_years = [int(y) for y in selected_years if y.isdigit()]
+
+        rooms = Room.objects.filter(
+            meters__type=meter_type
+        ).distinct()
+
+        data = []
+
+        all_years = set()
+        all_months = set()
+
+        for room in rooms:
+            meters = room.meters.filter(type=meter_type)
+
+            for meter in meters:
+                readings = meter.readings.all()
+
+                monthly_data = {}
+                yearly_data = {}
+
+                grouped_months = defaultdict(list)
+                grouped_years = defaultdict(list)
+
+                for r in readings:
+                    year = r.timestamp.year
+                    month = r.timestamp.month
+
+                    grouped_months[(month, year)].append(r)
+                    grouped_years[year].append(r)
+
+                    all_years.add(year)
+                    all_months.add((month, year))
+
+                for key, values in grouped_months.items():
+                    latest = max(values, key=lambda x: x.timestamp)
+                    monthly_data[key] = latest.value
+
+                for year, values in grouped_years.items():
+                    latest = max(values, key=lambda x: x.timestamp)
+                    yearly_data[year] = latest.value
+
+                meter.monthly_data = monthly_data
+                meter.yearly_data = yearly_data
+
+            data.append({
+                "room": room,
+                "meters": meters
+            })
+
+        months = sorted(all_months, key=lambda x: (x[1], x[0]))
+        years = sorted(all_years)
+
+        if not selected_years and years:
+            selected_years = [years[-1]]
+
+        if selected_years:
+            months = [m for m in months if m[1] in selected_years]
+            years = [y for y in years if y in selected_years]
+
+        context.update({
+            "meter_type": meter_type,
+            "data": data,
+            "mode": mode,
+            "months": months,
+            "years": years,
+            "all_years": sorted(all_years),
+            "selected_years": selected_years,
+        })
+
         return context
     
 
