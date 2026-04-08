@@ -20,6 +20,7 @@ class Room(models.Model):
 class MeterType(models.Model):
     name = models.CharField(max_length=100, verbose_name=_("Name"))
     unit = models.CharField(max_length=20, verbose_name=_("Unit"))  # for example: "kWh", "KJ"
+    number_label = models.CharField(max_length=100, blank=True, verbose_name=_("Number label"))  # for example: "vodoměru"
 
     class Meta:
         verbose_name = _("Meter type")
@@ -30,8 +31,8 @@ class MeterType(models.Model):
 
 
 class Meter(models.Model):
-    name = models.CharField(max_length=100, unique=True, verbose_name=_("Name"))
-    number = models.CharField(max_length=50, verbose_name=_("Number"))
+    name = models.CharField(max_length=100, blank=True, null=True, verbose_name=_("Name"))
+    number = models.CharField(max_length=50, unique=True, verbose_name=_("Number"))
     type = models.ForeignKey(MeterType, on_delete=models.CASCADE, related_name="meters", verbose_name=_("Type"))
     room = models.ForeignKey(Room, on_delete=models.CASCADE, related_name="meters", verbose_name=_("Room"))
     slug = models.SlugField(max_length=255, unique=True, blank=True, verbose_name=_("Slug"))
@@ -42,12 +43,12 @@ class Meter(models.Model):
         verbose_name_plural = _("Meters")
 
     def save(self, *args, **kwargs):
-        if not self.slug:  # auto-generate slug on first save
-            self.slug = slugify(self.name)
+        if not self.slug:
+            self.slug = slugify(self.name) if self.name else slugify(self.number)
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return self.name
+        return self.name if self.name else self.number
 
 
 class Reading(models.Model):

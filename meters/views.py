@@ -284,17 +284,71 @@ def link_callback(uri, rel):
         return result
     return uri
 
-def overview_export_pdf(request):
-    overview = get_overview_data()
-    context = {'overview': overview}
+def meter_type_pdf(request, pk):
+    meter_type = MeterType.objects.get(pk=pk)
+    mode = request.GET.get("mode", "monthly")
+    selected_years = request.GET.getlist("years")
+    selected_years = [int(y) for y in selected_years if y.isdigit()]
 
-    response = HttpResponse(content_type='application/pdf')
-    response['Content-Disposition'] = 'attachment; filename="overview.pdf"'
+    rooms = Room.objects.filter(meters__type=meter_type).distinct()
+    data = []
+    all_years = set()
+    all_months = set()
 
-    template = get_template('overview/overview_pdf.html')
+    for room in rooms:
+        meters = room.meters.filter(type=meter_type)
+        for meter in meters:
+            readings = meter.readings.all()
+            monthly_data = {}
+            yearly_data = {}
+            grouped_months = defaultdict(list)
+            grouped_years = defaultdict(list)
+
+            for r in readings:
+                year = r.timestamp.year
+                month = r.timestamp.month
+                grouped_months[(month, year)].append(r)
+                grouped_years[year].append(r)
+                all_years.add(year)
+                all_months.add((month, year))
+
+            for key, values in grouped_months.items():
+                latest = max(values, key=lambda x: x.timestamp)
+                monthly_data[key] = latest.value
+
+            for year, values in grouped_years.items():
+                latest = max(values, key=lambda x: x.timestamp)
+                yearly_data[year] = latest.value
+
+            meter.monthly_data = monthly_data
+            meter.yearly_data = yearly_data
+
+        data.append({"room": room, "meters": meters})
+
+    months = sorted(all_months, key=lambda x: (x[1], x[0]))
+    years = sorted(all_years)
+
+    if not selected_years and years:
+        selected_years = [years[-1]]
+    if selected_years:
+        months = [m for m in months if m[1] in selected_years]
+        years = [y for y in years if y in selected_years]
+
+    context = {
+        "meter_type": meter_type,
+        "data": data,
+        "mode": mode,
+        "months": months,
+        "years": years,
+        "selected_years": selected_years,
+        "STATIC_URL": settings.STATIC_URL,
+    }
+
+    template = get_template("overview/overview_pdf.html")
     html = template.render(context)
-
-    pisa_status = pisa.CreatePDF(html, dest=response, encoding='UTF-8', link_callback=link_callback)
+    response = HttpResponse(content_type="application/pdf")
+    response["Content-Disposition"] = f'attachment; filename="{meter_type.name}.pdf"'
+    pisa_status = pisa.CreatePDF(html, dest=response, encoding="UTF-8", link_callback=link_callback)
     if pisa_status.err:
-        return HttpResponse('We had some errors <pre>' + html + '</pre>')
+        return HttpResponse("Error generating PDF: <pre>" + html + "</pre>")
     return response

@@ -13,5 +13,5 @@ urlpatterns = [
     path("meters/<slug:slug>/add/", ReadingCreateView.as_view(), name="reading_add"),
     path("meters/<slug:slug>/edit/", ReadingUpdateView.as_view(), name="reading_edit"),
     path("report/", ReportView.as_view(), name="report"),
-    path('overview/export-pdf/', views.overview_export_pdf, name='overview_export_pdf'),
+    path("meter-type/<int:pk>/pdf/", views.meter_type_pdf, name="meter_type_pdf"),
 ]

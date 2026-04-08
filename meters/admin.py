@@ -10,15 +10,15 @@ class RoomAdmin(admin.ModelAdmin):
 
 @admin.register(MeterType)
 class MeterTypeAdmin(admin.ModelAdmin):
-    list_display = ("id", "name", "unit")
+    list_display = ("id", "name", "unit", "number_label")
     search_fields = ("name", "unit")
 
 
 @admin.register(Meter)
 class MeterAdmin(admin.ModelAdmin):
-    list_display = ("id", "name", "type", "room")
+    list_display = ("number", "name", "type", "room")
     list_filter = ("type", "room")
-    search_fields = ("name",)
+    search_fields = ("name", "number")
     autocomplete_fields = ("type", "room")
 
 

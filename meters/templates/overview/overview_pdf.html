@@ -1,39 +1,76 @@
 {% load i18n %}
-
+{% load custom_filters %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Meters Overview</title>
+    <title>{{ meter_type.name }}</title>
     <style>
         @font-face {
             font-family: 'DejaVuSans';
             src: url('{{ STATIC_URL }}assets/fonts/DejaVuSans.ttf');
         }
-        body { font-family: DejaVuSans, sans-serif; font-size: 12px; }
-        table { border-collapse: collapse; width: auto; margin-bottom: 20px; }
-        th, td { border: 1px solid #333; padding: 6px 10px; }
+        body { font-family: DejaVuSans, sans-serif; font-size: 10px; }
+        h2 { font-size: 14px; }
+        h4 { font-size: 12px; margin: 10px 0 4px 0; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 16px; }
+        th, td { border: 1px solid #333; padding: 4px 8px; }
         th { background-color: #28a745; color: white; }
     </style>
 </head>
 <body>
-    <h2>{% trans "Meters by type value" %}</h2>
-    {% for item in overview %}
-        <h4>{{ item.meter_type }} ({{ item.unit }})</h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>&nbsp;</th>
-                    <th style="text-align: left;">{% trans "Total" %}</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>{% trans "Total" %}</td>
-                    <td>{{ item.total }}</td>
-                </tr>
-            </tbody>
-        </table>
-    {% endfor %}
+
+<h2>{{ meter_type.name }} ({{ meter_type.unit }})</h2>
+
+{% for item in data %}
+    <h4>{{ item.room.name }}</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>{% trans "Meter" %}</th>
+                <th>Č. {{ meter_type.number_label|default:meter_type.name }}</th>
+
+                {% if mode == "monthly" %}
+                    {% for m in months %}
+                        <th>{{ m.0|stringformat:"02d" }}/{{ m.1|slice:"2:" }}</th>
+                    {% empty %}
+                        <th>-</th>
+                    {% endfor %}
+                {% else %}
+                    {% for y in years %}
+                        <th>12/{{ y }}</th>
+                    {% empty %}
+                        <th>-</th>
+                    {% endfor %}
+                {% endif %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for meter in item.meters %}
+            <tr>
+                <td>{{ meter.name }}</td>
+                <td>{{ meter.number }}</td>
+
+                {% if mode == "monthly" %}
+                    {% for m in months %}
+                        <td>{{ meter.monthly_data|get_item:m|default:"-" }}</td>
+                    {% empty %}
+                        <td>-</td>
+                    {% endfor %}
+                {% else %}
+                    {% for y in years %}
+                        <td>{{ meter.yearly_data|get_item:y|default:"-" }}</td>
+                    {% empty %}
+                        <td>-</td>
+                    {% endfor %}
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% empty %}
+    <p>{% trans "No data available." %}</p>
+{% endfor %}
+
 </body>
 </html>

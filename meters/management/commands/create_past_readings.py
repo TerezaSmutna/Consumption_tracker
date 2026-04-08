@@ -10,10 +10,10 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument(
-            "--meter-name",
+            "--meter-number",
             type=str,
             default=None,
-            help="Name of the meter to target. If omitted, uses the first meter or creates a demo one.",
+            help="Number of the meter to target. If omitted, uses the first meter or creates a demo one.",
         )
         parser.add_argument(
             "--months",
@@ -52,7 +52,7 @@ class Command(BaseCommand):
         return dt.replace(year=y, month=m)
 
     def handle(self, *args, **options):
-        meter_name = options.get("meter_name")
+        meter_number = options.get("meter_number")
         months = options.get("months")
         value_start_raw = options.get("value_start")
         increment_raw = options.get("increment")
@@ -69,18 +69,18 @@ class Command(BaseCommand):
 
         # Select or create a meter
         meter = None
-        if meter_name:
+        if meter_number:
             try:
-                meter = Meter.objects.get(name=meter_name)
+                meter = Meter.objects.get(number=meter_number)
             except Meter.DoesNotExist:
-                raise CommandError(f"Meter with name '{meter_name}' does not exist.")
+                raise CommandError(f"Meter with number '{meter_number}' does not exist.")
         else:
             meter = Meter.objects.first()
             if meter is None:
                 room, _ = Room.objects.get_or_create(name="Default Room")
                 mtype, _ = MeterType.objects.get_or_create(name="Electricity", unit="kWh")
-                meter = Meter.objects.create(name="Demo Meter", type=mtype, room=room)
-                self.stdout.write(self.style.WARNING(f"No meters found; created demo meter: {meter.name}"))
+                meter = Meter.objects.create(number="DEMO-001", type=mtype, room=room)
+                self.stdout.write(self.style.WARNING(f"No meters found; created demo meter: {meter.number}"))
 
         now = timezone.now()
         start = self.month_anchor(now)
@@ -118,6 +118,6 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Checked {checked} months, created {created} readings for meter '{meter.name}'."
+                f"Checked {checked} months, created {created} readings for meter '{meter.number}'."
             )
         )

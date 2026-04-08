@@ -365,6 +365,21 @@ msgstr "Označení"
 msgid "Overview"
 msgstr "Přehled"
 
+msgid "Monthly"
+msgstr "Měsíčně"
+
+msgid "Yearly"
+msgstr "Ročně"
+
+msgid "Select year"
+msgstr "Vyberte rok"
+
+msgid "No data"
+msgstr "Žádná data"
+
+msgid "Print to PDF"
+msgstr "Otevřít v PDF"
+
 #: templates/base.html:9
 msgid "Evidence Spotreby"
 msgstr "Evidence Spotřeby"
